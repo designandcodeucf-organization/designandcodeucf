@@ -1,9 +1,13 @@
 
 function Hero() {
-  return (
-    <p className = "font-bold text-blue-500" >
-    Hey, Mya here! I added Tailwind CSS to our website. Just place the Tailwind Components into the className section! 
-  </p>
+  return (  
+    <>
+    <section>
+      <h1>Introducing Design & Code</h1>
+      <p>We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
+      <button>Become a member</button>
+    </section>
+    </>
   )
 }
 
