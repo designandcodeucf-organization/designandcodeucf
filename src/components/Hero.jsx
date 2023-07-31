@@ -8,8 +8,10 @@ function Hero() {
           <h1 className="text-white text-center text-5xl font-bold">Introducing <br/>Design & Code</h1>
           <p className="text-[#BBBBBB] text-xl text-center">We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
         </div>
-          <button className="bg-white font-bold py-4 px-8 rounded-xl mt-8">Become a member</button>
+          <button className="transition duration-300 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
+          
       </div>
+
     </section>
     </>
   )
