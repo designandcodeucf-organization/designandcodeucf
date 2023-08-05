@@ -29,7 +29,7 @@ function MemberCarousel () {
         key={item.name}
         className='w-[520px] inline-block p-16 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
       >
-        <img src={item.img} alt='Officer Images' />
+        <img className='rounded-lg' src={item.img} alt='Officer Images' />
         <h2 className='text-xl font-bold'>{item.name}</h2>
         <p className='text-gray-600 font-semibold'>{item.position}</p>
         <p className='text-gray-800'>{item.description}</p>
