@@ -1,16 +1,19 @@
 import React, {useState} from "react";
 import Hero from "./components/Hero";
-import MemberCarousel from "./components/Carousel";
+import OfficerCarousel from "./components/Carousel";
 
 function App() {
 
   return (
     <div className="App">
+      <>
+      <div className="bg-black bg-opacity-80">
+      
       <Hero/>
       
-      <MemberCarousel/>
-      
-      
+      <OfficerCarousel/>
+      </div>
+    </>  
     </div>
   );
 };

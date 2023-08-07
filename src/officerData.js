@@ -41,7 +41,7 @@ export const data = [
     },
     {
       id: 6,
-      img: 'https://images.unsplash.com/photo-1531078215167-91fcfe45b39e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1225&q=80',
+      img: 'https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGVhZHNob3R8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=500&q=60',
       name:'Name',
       position:'Position',
       readMore:'Click to learn more',
