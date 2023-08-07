@@ -1,4 +1,29 @@
+import { motion } from 'framer-motion'
 
+function Bubble(){
+
+  return(
+    <>
+      <motion.div
+        className='z-1 absolute h-auto w-auto  top-[-2%] left-[72%]'
+        style={{ x: 0, y:0 }} 
+        animate={{ x:[null, -10, 20, -30]}}
+        transition={{ repeat: Infinity, duration: 6 }}
+      >
+        <div className='contents'>
+          <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>
+            <div className='relative bg-pink-500 flex flex-none overflow-visible items-start justify-start rounded-xl px-4 py-2 h-min'>
+                <div className='flex flex-col flex-none shrink-0 justify-start whitespace-pre transform-none h-auto w-auto '>
+                  <p className='font-bold'>Polina</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </motion.div>
+    </>
+  )
+}
 function Hero() {
   return (  
     <>
@@ -20,7 +45,9 @@ function Hero() {
               <button className="transition duration-150 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
             {/* </div>s */}
           </div>
+          <Bubble/>
         </div>
+        
       </section>
     </>
   )
@@ -28,25 +55,3 @@ function Hero() {
 
 export default Hero
 
-/*
-function Hero() {
-  return (  
-    <>
-    <section className=" zrelative content-center items-center justify-center flex-col flex py-8 max-w-full h-screen">
-      <div>
-        </div>
-        <div className="content-center items-center justify-center flex-wrap flex-col flex max-w-7xl">
-          <div className="w-full max-w-lg gap-8 flex-wrap flex-col flex">
-            <h1 className="text-white text-center text-5xl font-bold">Introducing <br/>Design & Code</h1>
-            <p className="text-[#BBBBBB] text-xl text-center">We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
-          </div>
-          <button className="transition duration-150 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
-        </div>
-    </section>
-    </>
-  )
-}
-
-export default Hero
-
-*/
