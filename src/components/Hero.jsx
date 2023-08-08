@@ -1,14 +1,29 @@
-import { motion } from 'framer-motion'
+import {  motion } from 'framer-motion'
 
+
+const position = {
+    initial: {
+      x: 0,
+      y: 0,
+    },
+    final: {
+      x: -10,
+      y: 10,
+      
+    }
+}
 function Bubble(){
+
+
 
   return(
     <>
       <motion.div
-        className='z-1 absolute h-auto w-auto  top-[-2%] left-[72%]'
-        style={{ x: 0, y:0 }} 
-        animate={{ x:[null, -10, 20, -30]}}
-        transition={{ repeat: Infinity, duration: 6 }}
+        className='z-1 absolute h-auto w-auto top-[-2%] left-[72%]'
+        initial="initial" 
+        animate="final"
+        transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 ,}}
+        variants={position}
       >
         <div className='contents'>
           <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>
@@ -42,7 +57,7 @@ function Hero() {
             </div>
 
             {/* <div className="flex items-center justify-center gap-10 h-min-content overflow-hidden relative w-min-content"> */}
-              <button className="transition duration-150 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
+              <button className="transition duration-200 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
             {/* </div>s */}
           </div>
           <Bubble/>
