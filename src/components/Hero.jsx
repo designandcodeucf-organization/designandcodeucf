@@ -43,14 +43,6 @@ function Bubble({ name, color }){
 function Hero() {
   return (  
     <>
-<<<<<<< HEAD
-    <section>
-      <h1>Introducing Design & Code</h1>
-      <p>We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
-      <button>Become a member</button>
-      <button>new-branch button</button>
-    </section>
-=======
       <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-52 h-min w-full ">
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-wrap content-center overflow-visible items-center justify-center px-4 h-min max-w-7xl w-full">
@@ -76,7 +68,6 @@ function Hero() {
         </div>
         
       </section>
->>>>>>> jaden-branch
     </>
   )
 }
