@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Hero from "./components/Hero";
 import OfficerCarousel from "./components/Carousel";
 import Footer from "./components/Footer"
-import Hero from "./components/Hero"
 
 function App() {
 
