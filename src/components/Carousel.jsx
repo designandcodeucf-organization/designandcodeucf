@@ -16,11 +16,11 @@ function OfficerCarousel () {
   
     let scrollLength;
     if (windowWidth < 640) {
-      scrollLength = 50; // Adjust this value for smaller screens
+      scrollLength = 50; //smaller screens
     } else if (windowWidth < 768) {
-      scrollLength = 450; // Adjust this value for medium screens
+      scrollLength = 450; //medium screens
     } else {
-      scrollLength = 900; // Default value for larger screens
+      scrollLength = 900; //larger screens
     }
   
     slider.scrollLeft = slider.scrollLeft - scrollLength;
@@ -34,9 +34,9 @@ function OfficerCarousel () {
     if (windowWidth < 640) {
       scrollLength = 50; // Adjust this value for smaller screens
     } else if (windowWidth < 768) {
-      scrollLength = 450; // Adjust this value for medium screens
+      scrollLength = 450; //medium screens
     } else if (windowWidth < 1200){
-      scrollLength = 500; // Default value for larger screens
+      scrollLength = 500; //larger screens
     } else {
       scrollLength = 900
     }
@@ -58,7 +58,7 @@ function OfficerCarousel () {
     <h1>Meet Our Officers:</h1>
     </div>
       <div className='relative flex items-center'>
-        <MdChevronLeft className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-72 md:py-1 md:mb-60 md:px-1 md:rounded-full md:ml-4 lg:mb-36 lg:ml-8 xs:invisible sm:visible' onClick={slideLeft} size={40} />
+        <MdChevronLeft className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-72 sm:mr-8 sm:ml-8 md:py-1 md:mb-60 md:px-1 md:rounded-full md:ml-8 lg:mb-36 lg:ml-8 xs:invisible sm:visible' onClick={slideLeft} size={40} />
         <div
           id='slider'
           className='w-[100%] h-[550px] xs:w-[450px] sm:w-[600px] md:w-[1450px] xs:flex xs:flex-row xs: xs:overflow-y-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
@@ -86,7 +86,7 @@ function OfficerCarousel () {
 
     ))}
         </div>
-        <MdChevronRight className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-72 md:py-1 md:mb-60 md:px-1 md:rounded-full md:ml-4 lg:mb-36 lg:ml-8 xs:invisible sm:visible' onClick={slideRight} size={40} />
+        <MdChevronRight className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:ml-8 sm:mr-8 sm:mb-72 md:py-1 md:mb-60 md:px-1 md:rounded-full md:ml-8 lg:mb-36 lg:ml-8 xs:invisible sm:visible' onClick={slideRight} size={40} />
       </div>
 
       {selectedMember && (
@@ -96,7 +96,7 @@ function OfficerCarousel () {
           <img
         src={selectedMember.img} 
         alt={selectedMember.name} //alt attribute for accessibility
-        className='w-[200px] h-[200px] object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px]  xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[200px] object-cover rounded-full mx-auto mb-4'
       />
             <h2 className='text-white text-xl font-bold text-center'>{selectedMember.name}</h2>
             <p className='text-white font-semibold text-center'>
