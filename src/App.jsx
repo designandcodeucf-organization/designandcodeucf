@@ -1,7 +1,5 @@
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
-import React, {useState} from "react";
-import Hero from "./components/Hero";
 import OfficerCarousel from "./components/Carousel";
 
 function App() {
@@ -17,18 +15,18 @@ function App() {
       <div className="contents">
         <div style={{minHeight:"100%", width:"auto"}}className="relative flex flex-col flex-nowrap gap-6 justify-start overflow-hidden p-0 min-h-full h-min">
 
-          
+          <OfficerCarousel/>
         </div>
         <Footer />
       </div>
     </main>
-    </>
+    
 
-      <OfficerCarousel/>
+      
       </div>
     </>  
     </div>
   );
-};
+}
 
 export default App;
