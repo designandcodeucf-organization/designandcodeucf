@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import Hero from "./components/Hero";
 import OfficerCarousel from "./components/Carousel";
 import Footer from "./components/Footer"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
     <div className="App">
       <>
-      <div className="bg-black bg-opacity-80">
+      <div className="bg-black bg-opacity-100">
       
       <Hero/>
       
