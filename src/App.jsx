@@ -1,10 +1,16 @@
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
+import React, {useState} from "react";
+import Hero from "./components/Hero";
+import OfficerCarousel from "./components/Carousel";
 
 function App() {
 
   return (
-    <>
+    <div className="App">
+      <>
+      <div className="bg-black bg-opacity-80">
+      
       <Hero/>
       
     <main className="h-full box-border m-0 p-0">
@@ -17,7 +23,12 @@ function App() {
       </div>
     </main>
     </>
-  )
-}
 
-export default App
+      <OfficerCarousel/>
+      </div>
+    </>  
+    </div>
+  );
+};
+
+export default App;
