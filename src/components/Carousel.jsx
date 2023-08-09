@@ -54,14 +54,14 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='mt-48 ml-80 text-4xl font-bold text-primaryLight mb-4'>
+    <div className='mt-48 sm:ml-80 text-4xl font-bold text-primaryLight mb-4'>
     <h1>Meet Our Officers:</h1>
     </div>
-      <div className='ml-48 relative flex items-center'>
+      <div className='sm:relative flex items-center'>
         <MdChevronLeft className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-72 sm:mr-8 sm:ml-8 md:py-1 md:mb-60 md:px-1 md:rounded-full md:ml-8 lg:mb-36 lg:ml-8 xs:invisible sm:visible' onClick={slideLeft} size={40} />
         <div
           id='slider'
-          className='mb:100px w-[100%] h-[500px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row xs: xs:overflow-y-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row xs: xs:overflow-y-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
