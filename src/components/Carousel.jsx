@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { data } from '../officerData.js';
 import 'react-multi-carousel/lib/styles.css';
 import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
+import { SocialIcon } from 'react-social-icons';
+
 
 
 function OfficerCarousel () {
@@ -74,8 +76,8 @@ function OfficerCarousel () {
       >
 
         <div className='rounded-t-lg relative'>
-        <img className='rounded-t-lg  transition duration-300 sm:w-[250px] md:w-[350px] lg:w-[400px] z-20 ' src={item.img} alt='Officer Images' />
-        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px] hover:drop-shadow-[0_0_0.5px_rgba(255,204,55,1)] hover:shadow-2xl z-30'>
+        <img className='rounded-t-lg  transition duration-300 sm:w-[250px] md:w-[350px] lg:w-[400px] z-40 ' src={item.img} alt='Officer Images' />
+        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px]  hover:drop-shadow-[0px_5px_8px_rgba(255,204,55,1)] hover:shadow-2xl z-0'>
         <h2 className='text-xl font-bold sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
         <p className='text-gray-600 font-semibold sm:text-sm md:text-md lg:text-lg'>{item.position}</p>
         <p className='text-gray-800 text-sm'>{item.readMore}</p>
@@ -92,28 +94,41 @@ function OfficerCarousel () {
       </div>
 
       {selectedMember && (
-        <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50'>
-          
-          <div className='sm:w-[650px] sm:h-[600px] xs:w-[350px] xs:h-[550px] bg-primaryDarkBlue opacity-95 p-8 rounded-lg'>
-          <img
+  <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50'>
+    <div className='sm:w-[750px] sm:h-[650px] xs:w-[350px] xs:h-[550px] bg-primaryDarkBlue opacity-95 md:py-8 md:px-16 rounded-lg'>
+      <img
         src={selectedMember.img} 
-        alt={selectedMember.name} //alt attribute for accessibility
-        className='w-[200px] h-[200px]  xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[200px] object-cover rounded-full mx-auto mb-4'
+        alt={selectedMember.name}
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[200px] object-cover rounded-full mx-auto mb-4'
       />
-            <h2 className='text-white text-xl font-bold text-center'>{selectedMember.name}</h2>
-            <p className='text-white font-semibold text-center'>
-              {selectedMember.position}
-            </p>
-            <p className='text-white px-24 py-4 text-center sm:text-lg xs:text-sm xs:px-2'>{selectedMember.description}</p>
-            <button
-              className='mt-4 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block'
-              onClick={closePopup}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+      <h2 className='text-white text-xl font-bold text-center'>{selectedMember.name}</h2>
+      <p className='text-white font-semibold text-center'>
+        {selectedMember.position}
+      </p>
+      <p className='text-white px-24 py-4 text-center sm:text-lg xs:text-sm xs:px-2'>{selectedMember.description}</p>
+      <p className='text-white px-24 py-4 text-center sm:text-lg xs:text-sm xs:px-2'>{selectedMember.socials}</p>
+      <div className='flex justify-center px-8'>
+        {selectedMember.icons.map((icon, index) => (
+          <a
+          key={index}
+          href={icon.link}
+          target="_blank"  // This attribute opens the link in a new tab
+          rel="noopener noreferrer"  // Recommended for security and accessibility
+          className="mr-4 text-white"
+        >
+          {icon.socialName}
+        </a>
+        ))}
+      </div>
+      <button
+        className='mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block'
+        onClick={closePopup}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
 
     </>
   );
