@@ -149,24 +149,6 @@ export const data = [
     },
     {
       id: 9,
-      img: 'https://images.unsplash.com/photo-1527493368356-f5a7294832dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGFub255bW91cyUyMHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60',
-      name:'Linh Vu',
-      position:'Event Coordinator',
-      readMore:'Click to learn more',
-      major: 'Major: Computer Science',
-      minor:'',
-      description:'Linh is another one of the event coordinators, helping with creating and facilitating events for the club. While she is a Computer Science major and loves coding, she is also fascinated with design. She loves to play video games and listen to music.',
-      socials:'Where to reach Linh:',
-      icons: [
-        { socialName: 'Discord', link: 'https://www.facebook.com/' },
-      { socialName: 'GitHub', link: 'https://twitter.com/' },
-      { socialName: 'Instagram', link: 'https://www.instagram.com/' },
-      { socialName: 'Email', link: '' }
-        // Add more social icons here
-      ]
-    },
-    {
-      id: 10,
       img: 'https://images.unsplash.com/photo-1459245330819-1b6d75fbaa35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFub255bW91cyUyMG1hbnxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60',
       name:'Jaden',
       position:'Webmaster',
@@ -184,7 +166,7 @@ export const data = [
       ]
     },
     {
-      id: 11,
+      id: 10,
       img: 'https://images.unsplash.com/photo-1522496739788-e3927a7a5ad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGFub255bW91cyUyMG1hbnxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60',
       name:'Andres Rodriguez',
       position:'Community Builder',
