@@ -2,7 +2,7 @@ import {  motion } from 'framer-motion'
 
 
 export default function Bubble({ name, color }){
-  const position = {
+  const variants = {
     initial: {
       x: 0,
       y: 0,
@@ -20,11 +20,11 @@ export default function Bubble({ name, color }){
   return(
     <>
       <motion.div
-        className='z-1 absolute top-[0px] left-[82%] h-auto w-auto '
-        initial="initial" 
-        animate="final"
+        className='z-1 absolute top-[0px] left-[82%] h-auto w-auto'
+        initial={{ transform: "perspective(1200px) translate(-50%, -50%)", x: 0, y: 0  }}
+        animate={{ transform: "perspective(1200px) translate(-50%, -50%)", x: 20, y: 30  }}
         transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
-        variants={position}
+        variants={variants}
       >
         <div className='contents'>
           <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>
