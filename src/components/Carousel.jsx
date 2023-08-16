@@ -77,7 +77,7 @@ function OfficerCarousel () {
 
         <div className='rounded-t-lg relative'>
         <img className='rounded-t-lg  transition duration-300 sm:w-[250px] md:w-[350px] lg:w-[400px] z-40 ' src={item.img} alt='Officer Images' />
-        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px]  hover:drop-shadow-[0px_5px_8px_rgba(255,204,55,1)] hover:shadow-2xl z-0'>
+        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px]  hover:drop-shadow-[0px_15px_20px_rgba(255,204,55,0.5)] hover:shadow-2xl z-0'>
         <h2 className='text-xl font-bold sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
         <p className='text-gray-600 font-semibold sm:text-sm md:text-md lg:text-lg'>{item.position}</p>
         <p className='text-gray-800 text-sm'>{item.readMore}</p>
