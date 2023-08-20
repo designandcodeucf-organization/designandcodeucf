@@ -1,48 +1,9 @@
-import {  motion } from 'framer-motion'
+import Bubble from "./Bubble"
 
-
-function Bubble({ name, color }){
-  const position = {
-    initial: {
-      x: 0,
-      y: 0,
-    },
-    final: {
-      x: -30,
-      y: 30,
-      
-    }
-  }
-
-  return(
-    <>
-      <motion.div
-        className='z-1 absolute h-auto w-auto top-[-2%] left-[72%]'
-        initial="initial" 
-        animate="final"
-        transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
-        variants={position}
-      >
-        <div className='contents'>
-          <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>
-            <div className={`relative ${color} flex flex-none overflow-visible items-start justify-start rounded-xl px-4 py-2 h-min`}>
-                <div className='flex flex-col flex-none shrink-0 justify-start whitespace-pre transform-none h-auto w-auto '>
-                  <p className='font-bold'>{name}</p>
-                </div>
-            </div>
-            <div className=''>
-
-            </div>
-          </div>
-        </div>
-
-      </motion.div>
-    </>
-  )
-}
 function Hero() {
   return (  
     <>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <section>
       <h1>Introducing Design & Code</h1>
@@ -51,16 +12,19 @@ function Hero() {
     </section>
 =======
       <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-52 h-min w-full ">
+=======
+      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-40 h-min w-full ">
+>>>>>>> jaden-branch
         {/* hero inner */}
-        <div className="relative flex flex-col flex-none flex-wrap content-center overflow-visible items-center justify-center px-4 h-min max-w-7xl w-full">
+        <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-7xl w-full">
           {/* heading & cta */}
-          <div className="z-2 relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center px-4 h-min max-w-md w-full">
+          <div className="z-2 relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center h-min max-w-md w-full">
             <div className="relative flex flex-col flex-none flex-nowrap items-center justify-center gap-8 overflow-hidden h-min max-w-lg	 w-full">
               <div className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full">
                 <h1 className="text-white text-center text-5xl font-bold">Introducing <br/>Design & Code</h1>
               </div>
               <div className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full">
-                <p className="text-[#BBBBBB] text-xl text-center font-medium">We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
+                <p className="text-[#BBBBBB]  text-center font-medium">We are a UCF student organization that specializes in web design. Dedicated and focused on creating content for the digital world. </p>
               </div>
             </div>
 
@@ -68,10 +32,23 @@ function Hero() {
               <button className="transition duration-200 hover:scale-105 bg-white font-bold rounded-xl py-4 px-8 mt-8">Become a member</button>
             {/* </div>s */}
           </div>
+
           <Bubble
-            name="Polina"
-            color="bg-pink-500"
+            name="React"
+            color="bg-pink-400"
+            hex="#f472b6"
+            right= {false}
+            position = {{x: 0, y: 0, deltaX: -30, deltaY: 30}}
+            css = {{left:"75%", top: "-20%", bubLeft: "65%", bubTop:"-30%" }}
           />
+          {/* <Bubble
+            name="JavaScript"
+            color="bg-yellow-400"
+            hex="#facc15"
+            right= {true}
+            position = {{x: 0, y: 0, deltaX: -20, deltaY: 20}}
+            css = {{ bubLeft: "-49%", bubTop:"82%"}}
+          /> */}
         </div>
         
       </section>

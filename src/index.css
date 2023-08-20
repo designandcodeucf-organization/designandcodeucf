@@ -21,7 +21,16 @@
     -webkit-font-smoothing: inherit;
     box-sizing: border-box;
   }
+
+
+  .bubble{
+    transform: perspective(1200px) translate(-50%, -50%);
+  }
+
+  /* .st0{fill:#f472b6;} */
 }
+
+
 
 @supports (aspect-ratio: 1){
   
