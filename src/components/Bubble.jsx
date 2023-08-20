@@ -18,8 +18,8 @@ export default function Bubble({ name, hex, right }){
   return(
     <>
       <motion.div
-        style={{top:'-30%'}}
-        
+        style={{x: 0, y: 0, top:'-30%'}}
+        animate={{ x: 30, y: 30 }}
         className={`z-1 absolute h-auto w-auto `}
         transformTemplate={transformTemplate}
         transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
