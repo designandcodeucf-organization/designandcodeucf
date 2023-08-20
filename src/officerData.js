@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 export const data = [
     {
       id: 1,
-      img: 'https://images.unsplash.com/photo-1547860664-b8537ca5f833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjBjb2Rpbmd8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Polina.jpg',
       name:'Polina Shliakhina',
       position:'President',
       readMore:'Click to learn more',
@@ -23,7 +23,7 @@ export const data = [
     },
     {
       id: 2,
-      img: 'https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+      img: 'src/assets/officerHeadshots/Alan.jpg',
       name:'Alan Giraldo',
       position:'Vice President',
       readMore:'Click to learn more',
@@ -41,7 +41,7 @@ export const data = [
     },
     {
       id: 3,
-      img: 'https://images.unsplash.com/photo-1581093202218-980a6769202b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHdvbWFuJTIwY29kaW5nfGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Sydney.jpg',
       name:'Sydney Sedloff',
       position:'Treasurer',
       readMore:'Click to learn more',
@@ -59,8 +59,8 @@ export const data = [
     },
     {
       id: 4,
-      img: 'https://images.unsplash.com/photo-1640941517447-b52dcffd129f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGFub255bW91cyUyMHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60',
-      name:'Lindsey Nielsen',
+      img: 'src/assets/officerHeadshots/Lindsay.jpg',
+      name:'Lindsay Nielsen',
       position:'Secretary',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
@@ -77,7 +77,7 @@ export const data = [
     },
     {
       id: 5,
-      img: 'src/assets/KhariDuBardHeadShot2400x1600.jpg',
+      img: 'src/assets/officerHeadshots/Khari2.jpg',
       name:'Khari DuBard',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -95,7 +95,7 @@ export const data = [
     },
     {
       id: 6,
-      img: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5vbnltb3VzJTIwd29tYW58ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Jolina.jpg',
       name:' Jolina Jassal',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -113,7 +113,7 @@ export const data = [
     },
     {
       id: 7,
-      img: 'https://images.unsplash.com/photo-1527182246031-ff10204f695c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGFub255bW91cyUyMHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Casi.jpg',
       name:'Casandra Alvarez',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -131,7 +131,7 @@ export const data = [
     },
     {
       id: 8,
-      img: 'https://images.unsplash.com/photo-1541876482011-cd4c366360ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGFub255bW91cyUyMHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Mya.jpg',
       name:' Mya Mosley',
       position:'Event Coordinator',
       readMore:'Click to learn more',
@@ -149,7 +149,7 @@ export const data = [
     },
     {
       id: 9,
-      img: 'https://images.unsplash.com/photo-1459245330819-1b6d75fbaa35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFub255bW91cyUyMG1hbnxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Jaden.jpg',
       name:'Jaden',
       position:'Webmaster',
       readMore:'Click to learn more',
@@ -167,7 +167,7 @@ export const data = [
     },
     {
       id: 10,
-      img: 'https://images.unsplash.com/photo-1522496739788-e3927a7a5ad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGFub255bW91cyUyMG1hbnxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'src/assets/officerHeadshots/Andres.jpg',
       name:'Andres Rodriguez',
       position:'Community Builder',
       readMore:'Click to learn more',

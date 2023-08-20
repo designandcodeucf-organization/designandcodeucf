@@ -95,11 +95,11 @@ function OfficerCarousel () {
 
       {selectedMember && (
   <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50'>
-    <div className='sm:w-[750px] sm:h-[650px] xs:w-[350px] xs:h-[550px] bg-primaryDarkBlue opacity-95 md:py-8 md:px-16 rounded-lg'>
+    <div className='sm:w-[750px] sm:h-[700px] xs:w-[350px] xs:h-[550px] bg-primaryDarkBlue opacity-95 md:py-8 md:px-16 rounded-lg'>
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[200px] object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[250px] object-cover rounded-full mx-auto mb-4'
       />
       <h2 className='text-white text-xl font-bold text-center'>{selectedMember.name}</h2>
       <p className='text-white font-semibold text-center'>
