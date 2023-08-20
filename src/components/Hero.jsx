@@ -1,4 +1,4 @@
-import Bubble from './Bubble'
+import Bubble from "./Bubble"
 
 function Hero() {
   return (  
@@ -25,7 +25,19 @@ function Hero() {
           <Bubble
             name="React"
             color="bg-pink-400"
+            hex="#f472b6"
+            right= {false}
+            position = {{x: 0, y: 0, deltaX: -30, deltaY: 30}}
+            css = {{left:"75%", top: "-20%", bubLeft: "65%", bubTop:"-30%" }}
           />
+          {/* <Bubble
+            name="JavaScript"
+            color="bg-yellow-400"
+            hex="#facc15"
+            right= {true}
+            position = {{x: 0, y: 0, deltaX: -20, deltaY: 20}}
+            css = {{ bubLeft: "-49%", bubTop:"82%"}}
+          /> */}
         </div>
         
       </section>
