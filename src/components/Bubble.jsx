@@ -10,7 +10,8 @@ export default function Bubble({ name, hex, right }){
     setWindowWidth(window.innerWidth);
   };
 
-  const transformTemplate = (x,y) => {
+  
+  function template({ x, y }) {
     return `translateX(${x}px) translateX(${y}px)`
   }
 
@@ -20,8 +21,8 @@ export default function Bubble({ name, hex, right }){
       <motion.div
         style={{x: 0, y: 0, top:'-30%'}}
         animate={{ x: 30, y: 30 }}
+        transformTemplate={template}
         className={`z-1 absolute h-auto w-auto `}
-        transformTemplate={transformTemplate}
         transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
       >
         <div className='contents'>
