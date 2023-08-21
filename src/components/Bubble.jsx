@@ -1,7 +1,7 @@
 import {  motion } from 'framer-motion'
 import { useEffect, useState} from 'react';
 
-export default function Bubble({ name, hex, right }){
+export default function Bubble({ name, hex, right, coordinates }){
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -12,24 +12,27 @@ export default function Bubble({ name, hex, right }){
 
   
   function template({ x, y }) {
-    return `translateX(${x}px) translateX(${y}px)`
+    return `perspective(1200px) translate(-50%, -50%) translateX(${x}) translateY(${y}) scale(1)`
   }
 
+  
+  // Destructure the coordinates object
+  let { top, left } = coordinates
   
   return(
     <>
       <motion.div
-        style={{x: 0, y: 0, top:'-30%'}}
-        animate={{ x: 30, y: 30 }}
-        transformTemplate={template}
         className={`z-1 absolute h-auto w-auto `}
-        transition={{ repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
+        style={{x: 0, y: 0, top:`${top}`, left:`${left}`}}
+        animate={{ x: '24px', y: '4px' }}
+        transformTemplate={template}
+        transition={{  ease: "easeInOut", repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
       >
         <div className='contents'>
           <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>
-            <div style={{backgroundColor:`${hex}`}} className={`relative flex flex-none overflow-visible items-start justify-start rounded-xl px-3 py-2 h-min`}>
-                <div className='flex flex-col flex-none shrink-0 justify-start whitespace-pre transform-none h-auto w-auto '>
-                  <p className='font-bold text-[15px]  p-0 m-0'>{name}</p>
+            <div style={{backgroundColor:`${hex}`}} className={`relative flex flex-none overflow-visible items-start justify-start rounded-xl px-3 py-1.5 h-min`}>
+                <div className='flex flex-col flex-none shrink-0 justify-start whitespace-pre transform-none pointer-events-none h-auto w-auto'>
+                  <p className='font-bold text-[15px] p-0 m-0'>{name}</p>
                 </div>
             </div>
           </div>

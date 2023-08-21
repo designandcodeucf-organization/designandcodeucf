@@ -34,8 +34,7 @@ function Hero() {
             name="JavaScript"
             hex="#facc15"
             right= {true}
-            position = {{x: 0, y: 0, deltaX: -20, deltaY: 20}}
-            css = {{left:"75%", top: "-20%", bubLeft: "65%", bubTop:"-30%" }}
+            coordinates = {{top: "-20%", left:"30%" }}
           />
           
         </div>
