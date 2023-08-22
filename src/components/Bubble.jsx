@@ -1,5 +1,5 @@
 import {  motion } from 'framer-motion'
-import { useEffect, useState} from 'react';
+import { useEffect, useState, useRef} from 'react';
 
 export default function Bubble({ name, hex, right, coordinates }){
 
@@ -9,22 +9,65 @@ export default function Bubble({ name, hex, right, coordinates }){
   const updateWindowWidth = () => {
     setWindowWidth(window.innerWidth);
   };
-
   
+  // Destructure the coordinates object
+  let { top, left, mobileTop, mobileLeft } = coordinates
+
+  // returns either the mobile position or desktop
+  function handleTopQuery(){
+    if (windowWidth < 810){
+      return mobileTop
+    }
+    else{
+      return top
+    }
+  }
+  function handleLeftQuery(){
+    if (windowWidth < 810){
+      return mobileLeft
+    }
+    else{
+      return left
+    }
+  }
+  
+  // place these positions in a ref
+  let responsiveTop = useRef(handleTopQuery())
+  let responsiveLeft = useRef(handleLeftQuery())
+
+  // handles media query event listeners
+  useEffect(()=>{
+
+    // Adding resize event for windowWidth
+    window.addEventListener('resize', updateWindowWidth)
+
+    
+    if(windowWidth < 810){
+      responsiveTop.current = mobileTop
+      responsiveLeft.current = mobileLeft
+    } else {
+      responsiveTop.current = top
+      responsiveLeft.current = left
+    }
+
+    //  Clean up the event listener when the component unmounts 
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth);
+    };
+
+  },[windowWidth, top, left, mobileTop, mobileLeft])
+
+  // transition animation
   function template({ x, y }) {
     return `perspective(1200px) translate(-50%, -50%) translateX(${x}) translateY(${y}) scale(1)`
   }
 
-  
-  // Destructure the coordinates object
-  let { top, left } = coordinates
-  
   return(
     <>
       <motion.div
         className={`z-1 absolute h-auto w-auto `}
-        style={{x: 0, y: 0, top:`${top}`, left:`${left}`}}
-        animate={{ x: '24px', y: '4px' }}
+        style={{x: 0, y: 0, top:`${responsiveTop.current}`, left:`${responsiveLeft.current}`}}
+        animate={{ x: '12%', y: '4%' }}
         transformTemplate={template}
         transition={{  ease: "easeInOut", repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
       >

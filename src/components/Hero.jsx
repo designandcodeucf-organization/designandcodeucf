@@ -22,19 +22,32 @@ function Hero() {
             {/* </div>s */}
           </div>
 
-          {/* <Bubble
+          <Bubble
             name="React"
-            hex="#f472b6"
+            hex="#72daf4"
             right= {false}
-            position = {{x: 0, y: 0, deltaX: -30, deltaY: 30}}
-            css = {{left:"75%", top: "-20%", bubLeft: "65%", bubTop:"-30%" }}
-          /> */}
+            coordinates = {
+              {
+                top: "80%", 
+                left:"75%", 
+                mobileTop: '110%', 
+                mobileLeft: "90%"
+              }
+            }
+          />
           
           <Bubble
             name="JavaScript"
             hex="#facc15"
             right= {true}
-            coordinates = {{top: "-20%", left:"30%" }}
+            coordinates = {
+              {
+                top: "-20%", 
+                left:"30%", 
+                mobileTop: "-20%", 
+                mobileLeft: "30%" 
+              }
+            }
           />
           
         </div>
