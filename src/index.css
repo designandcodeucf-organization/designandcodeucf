@@ -28,7 +28,24 @@
     transform: perspective(1200px) translate(-50%, -50%);
   }
 
-  /* .st0{fill:#f472b6;} */
+  @media (max-width: 809px) {
+    .bubble1 {
+      top: -20%;
+      left: 58%;
+    }
+  }
+  @media (min-width: 810px) and (max-width: 1200px) {
+    .bubble1 {
+      top: -2%;
+      left: 82%;
+    }
+  }
+  @media (min-width: 1201px) {
+    .bubble1 {
+      top: 8%;
+      left: 71%;
+    }
+  }
 }
 
 

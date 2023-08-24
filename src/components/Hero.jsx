@@ -39,15 +39,10 @@ function Hero() {
           <Bubble
             name="JavaScript"
             hex="#facc15"
+            position="bubble1"
             right= {false}
             coordinates = {
               {
-                mobileTop: "-20%", 
-                mobileLeft: "58%",
-                tabTop: "-2%",
-                tabLeft: "82%",
-                desktopTop: "8%", 
-                desktopLeft:"71%", 
                 x: '30%',
                 y: '-50%'
               }
