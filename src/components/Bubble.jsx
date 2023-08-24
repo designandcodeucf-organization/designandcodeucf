@@ -11,23 +11,28 @@ export default function Bubble({ name, hex, right, coordinates }){
   };
   
   // Destructure the coordinates object
-  let { top, left, mobileTop, mobileLeft } = coordinates
+  let { mobileTop, mobileLeft, tabTop, tabLeft, desktopTop, desktopLeft, x, y } = coordinates
+  console.log(desktopTop+ 'yo')
 
   // returns either the mobile position or desktop
   function handleTopQuery(){
     if (windowWidth < 810){
       return mobileTop
     }
-    else{
-      return top
+    else if (windowWidth < 1200){
+      return tabTop
+    } else{
+      return desktopTop
     }
   }
   function handleLeftQuery(){
     if (windowWidth < 810){
       return mobileLeft
     }
-    else{
-      return left
+    else if (windowWidth < 1200){
+      return tabLeft
+    } else{
+      return desktopLeft
     }
   }
   
@@ -35,19 +40,21 @@ export default function Bubble({ name, hex, right, coordinates }){
   let responsiveTop = useRef(handleTopQuery())
   let responsiveLeft = useRef(handleLeftQuery())
 
+  console.log(responsiveLeft.current)
   // handles media query event listeners
   useEffect(()=>{
-
     // Adding resize event for windowWidth
     window.addEventListener('resize', updateWindowWidth)
-
     
-    if(windowWidth < 810){
+    if (windowWidth <= 809){
       responsiveTop.current = mobileTop
       responsiveLeft.current = mobileLeft
-    } else {
-      responsiveTop.current = top
-      responsiveLeft.current = left
+    } else if(windowWidth < 1200) {
+      responsiveTop.current = tabTop
+      responsiveLeft.current = tabLeft
+    }else{
+      responsiveTop.current = desktopTop
+      responsiveLeft.current = desktopLeft
     }
 
     //  Clean up the event listener when the component unmounts 
@@ -55,7 +62,7 @@ export default function Bubble({ name, hex, right, coordinates }){
       window.removeEventListener('resize', updateWindowWidth);
     };
 
-  },[windowWidth, top, left, mobileTop, mobileLeft])
+  },[windowWidth, mobileTop, mobileLeft, tabTop, tabLeft, desktopLeft, desktopTop])
 
   // transition animation
   function template({ x, y }) {
@@ -67,7 +74,7 @@ export default function Bubble({ name, hex, right, coordinates }){
       <motion.div
         className={`z-1 absolute h-auto w-auto `}
         style={{x: 0, y: 0, top:`${responsiveTop.current}`, left:`${responsiveLeft.current}`}}
-        animate={{ x: '12%', y: '4%' }}
+        animate={{ x: `${x}`, y: `${y}` }}
         transformTemplate={template}
         transition={{  ease: "easeInOut", repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
       >
