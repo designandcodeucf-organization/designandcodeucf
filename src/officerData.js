@@ -150,7 +150,7 @@ export const data = [
     {
       id: 9,
       img: 'src/assets/officerHeadshots/Jaden1600x1600.jpg',
-      name:'Jaden',
+      name:'Jaden Lewis-Chambers',
       position:'Webmaster',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
