@@ -75,9 +75,9 @@ function OfficerCarousel () {
         onClick={() => openPopup(item)}
       >
 
-        <div className='rounded-t-lg relative'>
-        <img className='rounded-t-lg  transition duration-300 sm:w-[250px] md:w-[350px] lg:w-[400px] z-40 ' src={item.img} alt='Officer Images' />
-        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px]  hover:drop-shadow-[0px_15px_20px_rgba(255,204,55,0.5)] hover:shadow-2xl z-0'>
+        <div className='rounded-t-lg relative hover:drop-shadow-[0px_10px_15px_rgba(255,204,55,0.5)] hover:shadow-2xl '>
+        <img className='rounded-t-lg object-cover transition duration-300 sm:w-[250px] md:w-[350px] lg:w-[400px] z-40  ' src={item.img} alt='Officer Images' />
+        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[186px] md:w-[236px] lg:w-[300px]  z-0'>
         <h2 className='text-xl font-bold sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
         <p className='text-gray-600 font-semibold sm:text-sm md:text-md lg:text-lg'>{item.position}</p>
         <p className='text-gray-800 text-sm'>{item.readMore}</p>
@@ -95,11 +95,11 @@ function OfficerCarousel () {
 
       {selectedMember && (
   <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50'>
-    <div className='sm:w-[750px] sm:h-[700px] xs:w-[350px] xs:h-[550px] bg-primaryDarkBlue opacity-95 md:py-8 md:px-16 rounded-lg'>
+    <div className='xs:w-[350px] xs:h-[550px] sm:w-[550px] sm:h-[650px] md:w-[650px] md:h-[700px] lg:w-[700px] lg:h-[700px] bg-primaryDarkBlue opacity-95 md:py-8 md:px-16 rounded-lg'>
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[200px] sm:h-[250px] object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] object-cover rounded-full mx-auto mb-4'
       />
       <h2 className='text-white text-xl font-bold text-center'>{selectedMember.name}</h2>
       <p className='text-white font-semibold text-center'>

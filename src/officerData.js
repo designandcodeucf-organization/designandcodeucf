@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 export const data = [
     {
       id: 1,
-      img: 'src/assets/officerHeadshots/Polina.jpg',
+      img: 'src/assets/officerHeadshots/Polina1600x1600.jpg',
       name:'Polina Shliakhina',
       position:'President',
       readMore:'Click to learn more',
@@ -23,7 +23,7 @@ export const data = [
     },
     {
       id: 2,
-      img: 'src/assets/officerHeadshots/Alan.jpg',
+      img: 'src/assets/officerHeadshots/Alan1600x1600.jpg',
       name:'Alan Giraldo',
       position:'Vice President',
       readMore:'Click to learn more',
@@ -41,7 +41,7 @@ export const data = [
     },
     {
       id: 3,
-      img: 'src/assets/officerHeadshots/Sydney.jpg',
+      img: 'src/assets/officerHeadshots/Sydney1600x1600.jpg',
       name:'Sydney Sedloff',
       position:'Treasurer',
       readMore:'Click to learn more',
@@ -59,8 +59,8 @@ export const data = [
     },
     {
       id: 4,
-      img: 'src/assets/officerHeadshots/Lindsay.jpg',
-      name:'Lindsay Nielsen',
+      img: 'src/assets/officerHeadshots/Lindsay1600x1600.jpg',
+      name:'Lindsey Nielsen',
       position:'Secretary',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
@@ -77,7 +77,7 @@ export const data = [
     },
     {
       id: 5,
-      img: 'src/assets/officerHeadshots/Khari2.jpg',
+      img: 'src/assets/officerHeadshots/Khari2_1600x1600.jpg',
       name:'Khari DuBard',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -95,7 +95,7 @@ export const data = [
     },
     {
       id: 6,
-      img: 'src/assets/officerHeadshots/Jolina.jpg',
+      img: 'src/assets/officerHeadshots/Jolina1600x1600.jpg',
       name:' Jolina Jassal',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -113,7 +113,7 @@ export const data = [
     },
     {
       id: 7,
-      img: 'src/assets/officerHeadshots/Casi.jpg',
+      img: 'src/assets/officerHeadshots/Casi1600x1600.jpg',
       name:'Casandra Alvarez',
       position:'Marketking Coordinator',
       readMore:'Click to learn more',
@@ -131,7 +131,7 @@ export const data = [
     },
     {
       id: 8,
-      img: 'src/assets/officerHeadshots/Mya.jpg',
+      img: 'src/assets/officerHeadshots/Mya1600x1600.jpg',
       name:' Mya Mosley',
       position:'Event Coordinator',
       readMore:'Click to learn more',
@@ -149,7 +149,7 @@ export const data = [
     },
     {
       id: 9,
-      img: 'src/assets/officerHeadshots/Jaden.jpg',
+      img: 'src/assets/officerHeadshots/Jaden1600x1600.jpg',
       name:'Jaden',
       position:'Webmaster',
       readMore:'Click to learn more',
@@ -167,7 +167,7 @@ export const data = [
     },
     {
       id: 10,
-      img: 'src/assets/officerHeadshots/Andres.jpg',
+      img: 'src/assets/officerHeadshots/Andres1600x1600.jpg',
       name:'Andres Rodriguez',
       position:'Community Builder',
       readMore:'Click to learn more',
