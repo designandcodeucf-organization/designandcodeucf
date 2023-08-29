@@ -1,14 +1,10 @@
 import {  motion } from 'framer-motion'
-import { useEffect, useState, useRef} from 'react';
 
 export default function Bubble({ name, hex, right, position, coordinates }){
 
-
-  
   // Destructure the coordinates object
-  let { x, y } = coordinates
+  let { x, y, delay } = coordinates
 
- 
   // transition animation
   function template({ x, y }) {
     return `perspective(1200px) translate(-50%, -50%) translateX(${x}) translateY(${y}) scale(1)`
@@ -19,9 +15,9 @@ export default function Bubble({ name, hex, right, position, coordinates }){
       <motion.div
         className={`z-1 ${position} absolute h-auto w-auto `}
         style={{x: 0, y: 0, }}
-        animate={{ x: `${x}`, y: `${y}` }}
+        animate={{ x: `${x}`, y: `${y}`}}
         transformTemplate={template}
-        transition={{  ease: "easeInOut", repeat: Infinity, repeatType: 'mirror', repeatDelay: 4, duration: 2 }}
+        transition={{  ease: "easeInOut", repeat: Infinity, repeatType: 'mirror', repeatDelay: `${delay}`, duration: 2 }}
       >
         <div className='contents'>
           <div className='flex flex-row flex-none flex-nowrap overflow-visible items-center justify-start h-min'>

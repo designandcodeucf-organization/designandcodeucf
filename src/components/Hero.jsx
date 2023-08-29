@@ -1,3 +1,4 @@
+import { delay } from "framer-motion"
 import Bubble from "./Bubble"
 
 function Hero() {
@@ -21,20 +22,6 @@ function Hero() {
               <button className="transition duration-200 hover:scale-105 bg-white font-bold rounded-xl py-4 px-6 mt-8">Become a member</button>
             {/* </div> */}
           </div>
-
-          {/* <Bubble
-            name="React"
-            hex="#72daf4"
-            right= {false}
-            coordinates = {
-              {
-                top: "80%", 
-                left:"75%", 
-                mobileTop: '110%', 
-                mobileLeft: "90%"
-              }
-            }
-          /> */}
           
           <Bubble
             name="JavaScript"
@@ -44,27 +31,39 @@ function Hero() {
             coordinates = {
               {
                 x: '30%',
-                y: '-50%'
+                y: '-50%',
+                delay: 4
               }
             }
           />
-{/* 
+
           <Bubble
             name="HTML"
             hex="#ec8816"
+            position="bubble2"
             right= {true}
             coordinates = {
               {
-                top: "100%", 
-                left:"20%", 
-                mobileTop: "120%", 
-                mobileLeft: "30%" 
+                x: '20%',
+                y: '-20%',
+                delay: 5
               }
             }
-          /> */}
-          
+          />
+          <Bubble
+            name="React"
+            hex="#72daf4"
+            position="bubble3"
+            right= {false}
+            coordinates = {
+              {
+                x: '20%',
+                y: '20%',
+                delay: 6
+              }
+            }
+          /> 
         </div>
-        
       </section>
     </>
   )
