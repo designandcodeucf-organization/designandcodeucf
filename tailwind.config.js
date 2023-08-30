@@ -29,11 +29,8 @@ export default {
         secondaryYellow:'#FFCC37',
       },
     },
-  },
-  plugins: [ require('tailwind-scrollbar-hide')
-    
-  ],
-}
+  }
+
   
 
 
