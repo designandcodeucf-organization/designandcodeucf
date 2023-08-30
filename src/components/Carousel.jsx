@@ -67,7 +67,7 @@ function OfficerCarousel () {
     
         <div
           id='slider'
-          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px]  xs:flex xs:flex-row xs: xs:overflow-y-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div

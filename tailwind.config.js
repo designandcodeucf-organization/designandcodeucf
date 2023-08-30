@@ -28,9 +28,13 @@ export default {
         secondaryPink:'#E75A7C',
         secondaryYellow:'#FFCC37',
       },
+      
     },
-  }
-
+  }, 
+  plugins:  [
+      require('tailwind-scrollbar-hide')
+    ]
+}
   
 
 
