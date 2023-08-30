@@ -2,21 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 639px) {
+    #slider {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  }
 
-@layer base{
-  html{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    background-color: #0B0B0E;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   *{
     box-sizing: border-box;
     /* text-rendering: optimizeLegibility; */
@@ -75,7 +69,7 @@
 }
 
 
-
 @supports (aspect-ratio: 1){
   
 }
+

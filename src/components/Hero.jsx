@@ -1,6 +1,7 @@
 import { delay } from "framer-motion"
 import Bubble from "./Bubble"
 
+
 function Hero() {
   return (  
     <>
