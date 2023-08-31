@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import OfficerCarousel from "./components/Carousel";
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
