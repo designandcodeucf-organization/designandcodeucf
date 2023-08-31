@@ -8,15 +8,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     screens:{
         'xs':'320px',
+         'bub': {'min': '810px', 'max': '1199px'},
         ...defaultTheme.screens,
       },
+
     extend: {
       
       fontFamily: {
         'sans': "'Manrope', sans-serif;",
       },
+
       colors: {
         primaryLight:'#EFE9F4',
         primaryDarkBlue: '#1D1153',
@@ -26,6 +30,7 @@ export default {
       },
     },
   },
+
   plugins: [ require('tailwind-scrollbar-hide')
     
   ],
