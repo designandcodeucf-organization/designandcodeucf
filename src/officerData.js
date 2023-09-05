@@ -164,7 +164,7 @@ export const data = [
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
       minor:'Minor: Film Studies',
-      description:'Andres is the community builder of Design & Code, focused on creating a welcoming and fun environment for all members. Originally from South Florida, he has helped with organizing channels and social events, establishing a strong foundation for communication for the club. He is passionate about design and aspires to be a full-stack developer.',
+      description:'Andres is the community builder of Design & Code, focused on creating a welcoming and fun environment for all members. Originally from South Florida, he has helped with organizing channels and social events, establishing a strong foundation for communication for the club.',
       socials:'Where to reach Andres:',
       icons: [
         { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/andres-rodriguez-343b83273/' },

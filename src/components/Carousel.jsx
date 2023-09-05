@@ -101,27 +101,27 @@ function OfficerCarousel () {
   <div className='pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75' onClick={closePopup}>
     
 
-    <div className='pop-up-box xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[525px] md:w-[550px] md:h-[575px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg' >
+    <div className='pop-up-box xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[625px] md:w-[550px] md:h-[625px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[150px] sm:h-[150px]  object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] object-cover rounded-full mx-auto mb-4'
       />
-      <h2 className='text-white lg:text-2xl font-bold text-center'>{selectedMember.name}</h2>
+      <h2 className='text-white sm:text-[22px] font-bold text-center'>{selectedMember.name}</h2>
       <p className='text-white font-semibold lg:text-xl text-center py-2'>
         {selectedMember.position}
       </p>
-      <p className='text-white font-semibold text-center'>
+      <p className='text-white font-semibold text-center sm:text-[14px]'>
         {selectedMember.major}
       </p>
-      <p className='text-white font-semibold text-center'>
+      <p className='text-white font-semibold text-center sm:text-[14px]'>
         {selectedMember.minor}
       </p>
-      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-md md:text-lg '>{selectedMember.description}</p>
+      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-[16px] lg:text-[18px] lg:px-16 '>{selectedMember.description}</p>
       <div>
 
       </div>
-      <p className='text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2'>{selectedMember.socials}</p>
+      <p className='text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2'></p>
       <div className='flex justify-center px-8'>
         {selectedMember.icons.map((icon, index) => (
           <a
