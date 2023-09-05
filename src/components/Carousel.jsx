@@ -56,6 +56,8 @@ function OfficerCarousel () {
     setSelectedMember(null);
   };
 
+
+
   return (
     <>
     
@@ -96,15 +98,17 @@ function OfficerCarousel () {
       </div>
 
       {selectedMember && (
-  <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75'>
-    <div className='xs:w-[400px] xs:h-[625px] sm:w-[550px] sm:h-[700px] md:w-[650px] md:h-[750px] lg:w-[700px] lg:h-[750px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'>
+  <div className='pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75' onClick={closePopup}>
+    
+
+    <div className='pop-up-box xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[525px] md:w-[550px] md:h-[575px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg' >
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[150px] sm:h-[150px]  object-cover rounded-full mx-auto mb-4'
       />
-      <h2 className='text-white text-2xl font-bold text-center'>{selectedMember.name}</h2>
-      <p className='text-white font-semibold text-xl text-center py-2'>
+      <h2 className='text-white lg:text-2xl font-bold text-center'>{selectedMember.name}</h2>
+      <p className='text-white font-semibold lg:text-xl text-center py-2'>
         {selectedMember.position}
       </p>
       <p className='text-white font-semibold text-center'>
@@ -113,7 +117,7 @@ function OfficerCarousel () {
       <p className='text-white font-semibold text-center'>
         {selectedMember.minor}
       </p>
-      <p className='text-white px-24 py-4 text-center sm:text-lg xs:text-sm xs:px-2'>{selectedMember.description}</p>
+      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-md md:text-lg '>{selectedMember.description}</p>
       <div>
 
       </div>
@@ -131,7 +135,7 @@ function OfficerCarousel () {
         </a>
         ))}
       </div>
-     
+
       <button
         className='mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block'
         onClick={closePopup}
