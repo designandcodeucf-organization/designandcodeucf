@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  background-color: black;
+}
+
 @media (max-width: 639px) {
     #slider {
       overflow-x: hidden;
@@ -15,6 +20,8 @@
     box-sizing: border-box;
     /* text-rendering: optimizeLegibility; */
     -webkit-font-smoothing: antialiased;
+
+
   }
 
 
@@ -24,7 +31,7 @@
 
   @media (max-width: 809px) {
     .bubble1 {
-      top: -20%;
+      top: 20%;
       left: 58%;
     }
 
@@ -40,8 +47,8 @@
   }
   @media (min-width: 810px) and (max-width: 1200px) {
     .bubble1 {
-      top: -2%;
-      left: 82%;
+      top: 20%;
+      left: 70%;
     }
     .bubble2{
       top: 100%;
@@ -54,7 +61,7 @@
   }
   @media (min-width: 1201px) {
     .bubble1 {
-      top: 8%;
+      top: 20%;
       left: 71%;
     }
     .bubble2{

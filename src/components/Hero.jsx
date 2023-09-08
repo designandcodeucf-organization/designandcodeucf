@@ -5,7 +5,8 @@ import Bubble from "./Bubble"
 function Hero() {
   return (  
     <>
-      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-40 h-min w-full ">
+      <section className="h-screen min-h-[30rem]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-full w-full flex-col items-center justify-center py-16">
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
           {/* heading & cta */}
@@ -23,6 +24,7 @@ function Hero() {
               <button className="transition duration-200 hover:scale-105 bg-white font-bold rounded-xl py-4 px-6 mt-8">Become a member</button>
             {/* </div> */}
           </div>
+        </div>
           
           <Bubble
             name="JavaScript"
