@@ -5,7 +5,7 @@ import Bubble from "./Bubble"
 function Hero() {
   return (  
     <>
-      <section className="h-screen min-h-[30rem]">
+      <section className="h-[90vh] min-h-[30rem]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-full w-full flex-col items-center justify-center py-16">
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
