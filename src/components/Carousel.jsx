@@ -56,10 +56,12 @@ function OfficerCarousel () {
     setSelectedMember(null);
   };
 
+
+
   return (
     <>
     
-    <div className='mt-48 xs:ml-24 sm:ml-36 lg:ml-72 text-4xl font-bold text-primaryLight mb-4'>
+    <div className='mt-48 text-4xl text-center font-bold text-primaryLight mb-4'>
     <h1>Meet Our Officers:</h1>
     </div>
       <div className='sm:relative flex items-center'>
@@ -67,7 +69,7 @@ function OfficerCarousel () {
     
         <div
           id='slider'
-          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px]  xs:flex xs:flex-row xs: xs:overflow-y-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
@@ -96,28 +98,30 @@ function OfficerCarousel () {
       </div>
 
       {selectedMember && (
-  <div className='fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75'>
-    <div className='xs:w-[400px] xs:h-[625px] sm:w-[550px] sm:h-[700px] md:w-[650px] md:h-[750px] lg:w-[700px] lg:h-[750px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'>
+  <div className='pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75' onClick={closePopup}>
+    
+
+    <div className='pop-up-box xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[625px] md:w-[550px] md:h-[625px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] object-cover rounded-full mx-auto mb-4'
+        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] object-cover rounded-full mx-auto mb-4'
       />
-      <h2 className='text-white text-2xl font-bold text-center'>{selectedMember.name}</h2>
-      <p className='text-white font-semibold text-xl text-center py-2'>
+      <h2 className='text-white sm:text-[22px] font-bold text-center'>{selectedMember.name}</h2>
+      <p className='text-white font-semibold lg:text-xl text-center py-2'>
         {selectedMember.position}
       </p>
-      <p className='text-white font-semibold text-center'>
+      <p className='text-white font-semibold text-center sm:text-[14px]'>
         {selectedMember.major}
       </p>
-      <p className='text-white font-semibold text-center'>
+      <p className='text-white font-semibold text-center sm:text-[14px]'>
         {selectedMember.minor}
       </p>
-      <p className='text-white px-24 py-4 text-center sm:text-lg xs:text-sm xs:px-2'>{selectedMember.description}</p>
+      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-[16px] lg:text-[18px] lg:px-16 '>{selectedMember.description}</p>
       <div>
 
       </div>
-      <p className='text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2'>{selectedMember.socials}</p>
+      <p className='text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2'></p>
       <div className='flex justify-center px-8'>
         {selectedMember.icons.map((icon, index) => (
           <a
@@ -131,7 +135,7 @@ function OfficerCarousel () {
         </a>
         ))}
       </div>
-     
+
       <button
         className='mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block'
         onClick={closePopup}
