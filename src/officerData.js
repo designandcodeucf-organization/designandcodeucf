@@ -1,6 +1,5 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import 'font-awesome/css/font-awesome.min.css';
 
 
 
