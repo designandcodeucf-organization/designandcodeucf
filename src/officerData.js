@@ -1,5 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import 'font-awesome/css/font-awesome.min.css';
+
 
 
 export const data = [
@@ -133,7 +135,7 @@ export const data = [
       description:'Mya is one of the event coordinators, dedicated to planning and securing spaces for events. Raised in Jacksonville, her determination and ambition show through her work in event organization and coding. She is minoring in Computer Science, and some of her favorite books are “Parable of the Sower,” and “Dune.”',
       socials:'Where to reach Mya:',
       icons: [
-        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/mya-a-mosely/' },
+        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/mya-a-mosely/', },
       { socialName: 'GitHub', link: 'https://github.com/mmya2300' },
       { socialName: 'Email', link: 'mailto:moselymya230300@ucf.edu' }
         // Add more social icons here
@@ -174,5 +176,7 @@ export const data = [
       ]
     },
   ];
+
+  
 
   

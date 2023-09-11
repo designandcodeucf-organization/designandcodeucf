@@ -122,6 +122,7 @@ function OfficerCarousel () {
 
       </div>
       <p className='text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2'></p>
+      
       <div className='flex justify-center px-8'>
         {selectedMember.icons.map((icon, index) => (
           <a
@@ -132,6 +133,7 @@ function OfficerCarousel () {
           className="mr-4 text-white px-4 font-extrabold text-lg hover:bg-primaryLightBlue rounded"
         >
           {icon.socialName}
+          
         </a>
         ))}
       </div>
