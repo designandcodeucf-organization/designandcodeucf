@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+  html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #0B0B0E;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *{
+    -webkit-font-smoothing: inherit;
+    box-sizing: border-box;
+  }
+}
+
+@supports (aspect-ratio: 1){
+  
+}
 @media (max-width: 639px) {
     #slider {
       overflow-x: hidden;
@@ -67,7 +91,21 @@
     } 
   }
 
+ 
 
+  .pop-up-box {
+    z-index: 999;
+    ;
+  }
+
+ .pop-up-background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* Place it below the pop-up */
+    cursor: pointer
+  }
 
 @supports (aspect-ratio: 1){
   
