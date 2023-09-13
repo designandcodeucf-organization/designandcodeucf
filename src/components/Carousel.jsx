@@ -64,17 +64,18 @@ function OfficerCarousel () {
     <div className='mt-48 text-4xl text-center font-bold text-primaryLight mb-4'>
     <h1>Meet Our Officers:</h1>
     </div>
+    
       <div className='sm:relative flex items-center'>
-        <MdChevronLeft className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-96 sm:mr-8 sm:ml-8 md:py-1 md:mb-96 md:px-1 md:rounded-full md:ml-8 lg:mb-96 lg:ml-48 xs:invisible sm:visible' onClick={slideLeft} size={40} />
+        <MdChevronLeft className='opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mb-96 md:py-1 md:mb-96 md:px-1 md:rounded-full lg:mb-96 xs:invisible sm:visible' onClick={slideLeft} size={40} />
     
         <div
           id='slider'
-          className='mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='flex mb:100px w-[100%] h-[500px] xs:h-[800px] xs:w-[450px] sm:w-[600px] md:w-[1250px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
         key={item.id}
-        className='w-[520px] h-[450px] xs:w-[350px] xs:h-[1500px] sm:w-[250px] sm:h-[450px] md:w-[300px] lg:w-[456px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
+        className='xs:w-[350px] xs:h-[1500px] sm:w-[250px] sm:h-[450px] md:w-[300px] lg:w-[400px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
         
         onClick={() => openPopup(item)}
       >
