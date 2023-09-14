@@ -64,9 +64,9 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='xs:ml-4 xs:mr-4 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48'>
+    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48 mb-32'>
 <div className='bg-[#252526] rounded-lg'>
-    <div className='mt-48 text-4xl py-8 text-center font-bold text-primaryLight'>
+    <div className='mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight'>
     <h1>Meet Our Officers:</h1>
     </div>
       <div className='sm:relative flex items-center justify-center'>
@@ -75,19 +75,19 @@ function OfficerCarousel () {
     
         <div
           id='slider'
-          className='mb:100px h-[500px] xs:h-[500px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='mb:100px h-[500px] xs:h-[750px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
         key={item.id}
-        className='w-[520px] h-[450px] xs:w-[350px] xs:h-[1500px] sm:w-[250px] sm:h-[150px] md:w-[300px] lg:w-[356px] xl:w-[330px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
+        className='w-[520px] h-[450px] xs:w-[260px] xs:h-[1500px] sm:w-[250px] sm:h-[150px] md:w-[300px] lg:w-[356px] xl:w-[330px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
         onClick={() => openPopup(item)}
       >
 
         <div className='rounded-t-lg relative hover:drop-shadow-[0px_10px_15px_rgba(255,204,55,0.5)] hover:shadow-2xl '>
         <img className='rounded-t-lg object-cover transition duration-300 sm:w-[150px] md:w-[185px] lg:w-[350px] xl:w-[400px] z-40  ' src={item.img} alt='Officer Images' />
         <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[150px] md:w-[185px] lg:w-[236px] xl:w-[250px] z-0'>
-        <h2 className='text-xl font-bold sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
+        <h2 className='text-xl font-bold xs:text-sm sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
         <p className='text-gray-600 font-semibold sm:text-xs md:text-md lg:text-lg'>{item.position}</p>
         <p className='text-gray-800 text-sm'>{item.readMore}</p>
       </div>
