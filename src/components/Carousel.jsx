@@ -64,7 +64,7 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48 mb-32'>
+    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48'>
 <div className='bg-[#252526] rounded-lg'>
     <div className='mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight'>
     <h1>Meet Our Officers:</h1>
@@ -75,7 +75,7 @@ function OfficerCarousel () {
     
         <div
           id='slider'
-          className='mb:100px h-[500px] xs:h-[750px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className=' h-[500px] xs:h-[500px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
