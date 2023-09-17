@@ -5,7 +5,7 @@ function NavBar(){
         
     return(
         <>
-        <nav className=" w-full block items-center p-6 justify-end fixed z-10 bg-[#0b0b0e]">
+        <nav className=" nav-bar w-full block items-center py-4 px-16 justify-end fixed z-20 bg-[#0b0b0e]">
         
 
   <div className="block lg:hidden">

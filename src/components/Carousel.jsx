@@ -107,7 +107,7 @@ function OfficerCarousel () {
   <div className='pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75' onClick={closePopup}>
     
 
-    <div className='pop-up-box xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[625px] md:w-[550px] md:h-[625px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
+    <div className='pop-up-box z-30 xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[625px] md:w-[550px] md:h-[625px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
