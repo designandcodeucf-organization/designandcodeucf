@@ -1,10 +1,10 @@
-
+import logoWhiteText from "../assets/Design and Code Full Logo (White Text).png";
 function Footer() {
  return(
   <footer className="bg-black">
-  <div className="mx-auto max-w-3xl py-2 sm:px-3 lg:px-6 border-gray-100 border-t-2">
+  <div className="mx-auto max-w-3xl py-2 sm:px-3 lg:px-6 border-gray-100 border-t-2 flex justify-center flex-row">
       {/* Page Navigation */}
-    <ul className="mt-5 flex flex-wrap justify-center gap-3 md:gap-3 lg:gap-6">
+    {/* <ul className="mt-5 flex flex-wrap justify-center gap-3 md:gap-3 lg:gap-6">
   
       <li>
         <a className="text-gray-200 transition hover:text-gray-200/75" href="/">
@@ -18,19 +18,21 @@ function Footer() {
       </li>
       <li>
         <a className="text-gray-200 transition hover:text-gray-200/75" href="/">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a className="text-gray-200 transition hover:text-gray-200/75" href="/">
           Contacts
         </a>
       </li>
-    </ul>
+    </ul> */}
+  
+      <img src={logoWhiteText} alt="Design&Code Logo" className=" h-auto w-[175px] ml-2"/>
+    
+    
+
       {/* Icons */}
-    <ul className="mt-5 flex justify-center gap-3 md:gap-6 p-2">
-      <li>
-        <a
+  <div className="flex-col"> 
+      <h1 className="text-white"> Connect With Us! </h1>
+      <ul className="mt-0 flex gap-3 md:gap-3 p-0">
+        <li>
+         <a
           href="/"
           rel="noreferrer"
           target="_blank"
@@ -82,27 +84,6 @@ function Footer() {
           target="_blank"
           className="text-gray-200 transition hover:text-gray-200/75"
         >
-          <span className="sr-only">Twitter</span>
-          <svg
-            className="h-6 w-6"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-            />
-          </svg>
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="/"
-          rel="noreferrer"
-          target="_blank"
-          className="text-gray-200 transition hover:text-gray-200/75"
-        >
           <span className="sr-only">GitHub</span>
           <svg
             className="h-6 w-6"
@@ -119,6 +100,8 @@ function Footer() {
         </a>
       </li>
     </ul>
+  </div>
+   
   </div>
 </footer>
  )
