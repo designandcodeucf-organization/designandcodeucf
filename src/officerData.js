@@ -101,7 +101,7 @@ export const data = [
       socials:'Where to reach Jolina:',
       icons: [
         { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/jolina-jassal-15ba681b4' },
-      { socialName: 'GitHub', link: 'https://github.com/' },
+      { socialName: 'GitHub', link: 'https://github.com/jolijass' },
       { socialName: 'Email', link: 'mailto: jo625763@ucf.edu ' }
         // Add more social icons here
       ]
