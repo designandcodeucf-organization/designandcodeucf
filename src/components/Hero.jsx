@@ -5,8 +5,7 @@ import Bubble from "./Bubble"
 function Hero() {
   return (  
     <>
-      <section className="h-screen min-h-[30rem]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-full w-full flex-col items-center justify-center py-16">
+      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-40 h-min w-full ">
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
           {/* heading & cta */}
@@ -24,48 +23,8 @@ function Hero() {
               <button className="transition duration-200 hover:scale-105 bg-white font-bold rounded-xl py-4 px-6 mt-8">Become a member</button>
             {/* </div> */}
           </div>
-        </div>
           
-          <Bubble
-            name="JavaScript"
-            hex="#facc15"
-            position="bubble1"
-            right= {false}
-            coordinates = {
-              {
-                x: '30%',
-                y: '-50%',
-                delay: 4
-              }
-            }
-          />
 
-          <Bubble
-            name="HTML"
-            hex="#ec8816"
-            position="bubble2"
-            right= {true}
-            coordinates = {
-              {
-                x: '20%',
-                y: '-20%',
-                delay: 5
-              }
-            }
-          />
-          <Bubble
-            name="React"
-            hex="#72daf4"
-            position="bubble3"
-            right= {false}
-            coordinates = {
-              {
-                x: '20%',
-                y: '20%',
-                delay: 6
-              }
-            }
-          /> 
         </div>
       </section>
     </>
@@ -73,4 +32,3 @@ function Hero() {
 }
 
 export default Hero
-
