@@ -2,6 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 
+
 export const data = [
     {
       id: 1,
@@ -75,7 +76,7 @@ export const data = [
       id: 5,
       img: 'src/assets/officerHeadshots/Khari2_1600x1600.jpg',
       name:'Khari DuBard',
-      position:'Marketking Coordinator',
+      position:'Marketing Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
       minor:'',
@@ -92,7 +93,7 @@ export const data = [
       id: 6,
       img: 'src/assets/officerHeadshots/Jolina1600x1600.jpg',
       name:' Jolina Jassal',
-      position:'Marketking Coordinator',
+      position:'Marketing Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
       minor:'',
@@ -109,7 +110,7 @@ export const data = [
       id: 7,
       img: 'src/assets/officerHeadshots/Casi1600x1600.jpg',
       name:'Casandra Alvarez',
-      position:'Marketking Coordinator',
+      position:'Marketing Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
       minor:'Minor: Art History',
@@ -133,7 +134,7 @@ export const data = [
       description:'Mya is one of the event coordinators, dedicated to planning and securing spaces for events. Raised in Jacksonville, her determination and ambition show through her work in event organization and coding. She is minoring in Computer Science, and some of her favorite books are “Parable of the Sower,” and “Dune.”',
       socials:'Where to reach Mya:',
       icons: [
-        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/mya-a-mosely/' },
+        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/mya-a-mosely/', },
       { socialName: 'GitHub', link: 'https://github.com/mmya2300' },
       { socialName: 'Email', link: 'mailto:moselymya230300@ucf.edu' }
         // Add more social icons here
@@ -164,7 +165,7 @@ export const data = [
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
       minor:'Minor: Film Studies',
-      description:'Andres is the community builder of Design & Code, focused on creating a welcoming and fun environment for all members. Originally from South Florida, he has helped with organizing channels and social events, establishing a strong foundation for communication for the club. He is passionate about design and aspires to be a full-stack developer.',
+      description:'Andres is the community builder of Design & Code, focused on creating a welcoming and fun environment for all members. Originally from South Florida, he has helped with organizing channels and social events, establishing a strong foundation for communication for the club.',
       socials:'Where to reach Andres:',
       icons: [
         { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/andres-rodriguez-343b83273/' },
@@ -174,5 +175,7 @@ export const data = [
       ]
     },
   ];
+
+  
 
   
