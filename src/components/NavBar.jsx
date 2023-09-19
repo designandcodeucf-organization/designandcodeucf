@@ -28,6 +28,7 @@ function NavBar(){
       <a href="#Contact" className="block mt-4 lg:mt-0 text-white hover:text-primaryLightBlue mr-4">
         Contact
       </a>
+
       <a href="BecomeAMember" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0">Become A Member</a>
       
     </div>
