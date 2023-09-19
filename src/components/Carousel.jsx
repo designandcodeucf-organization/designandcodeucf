@@ -24,9 +24,7 @@ function OfficerCarousel() {
       scrollLength = 1075;
     }
 
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? circularData.length - 1 : prevSlide - 1
-    );
+
 
     slider.scrollLeft = slider.scrollLeft - scrollLength;
   };
