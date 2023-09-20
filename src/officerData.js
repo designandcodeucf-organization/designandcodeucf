@@ -126,7 +126,7 @@ export const data = [
     {
       id: 8,
       img: 'src/assets/officerHeadshots/Mya1600x1600.jpg',
-      name:' Mya Mosley',
+      name:' Mya Mosely',
       position:'Event Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
