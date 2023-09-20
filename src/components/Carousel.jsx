@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { data } from "../officerData.js";
 import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { socialIcon } from "react-social-icons";
 
 function OfficerCarousel() {
   const [selectedMember, setSelectedMember] = useState(null);
