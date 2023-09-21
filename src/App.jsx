@@ -10,9 +10,9 @@ function App() {
     <>
     <main className= " h-full box-border m-0 p-0">
       <div className="">
-        {/* <Hero/> */}
+        <Hero/>
         <About/>
-        {/* <OfficerCarousel/> */}
+        <OfficerCarousel/>
         {/* <Footer /> */}
 
       </div>

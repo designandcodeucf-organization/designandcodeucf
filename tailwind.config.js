@@ -16,8 +16,9 @@ export default {
     
     screens:{
         'xs':'320px',
-        's':'600px',
-         'bub': {'min': '810px', 'max': '1199px'},
+        'bub': {'min': '810px', 'max': '1199px'},
+        's': {'min': '0', 'max': '600px'},
+
         ...defaultTheme.screens,
       },
 
