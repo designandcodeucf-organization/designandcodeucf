@@ -20,7 +20,7 @@ function OfficerCarousel() {
     } else if (windowWidth < 1650) {
       scrollLength = 550;
     } else {
-      scrollLength = 1075;
+      scrollLength = 1000;
     }
 
 
@@ -40,9 +40,9 @@ function OfficerCarousel() {
     } else if (windowWidth < 1200) {
       scrollLength = 350; //larger screens
     } else if (windowWidth < 1650) {
-      scrollLength = 550;
+      scrollLength = 610;
     } else {
-      scrollLength = 1075;
+      scrollLength = 1000;
     }
 
     slider.scrollLeft = slider.scrollLeft + scrollLength;
@@ -58,7 +58,7 @@ function OfficerCarousel() {
 
   return (
     <>
-      <div className="xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-8 md:mr-8 lg:ml-16 lg:mr-16 xl:ml-32 xl:mr-32">
+      <div className="xs:ml-2 xs:mr-2 sm:ml-8 sm:mr-8 md:ml-32 md:mr-32 lg:ml-32 lg:mr-32 xl:ml-60 xl:mr-60">
         <div className="bg-[#252526] rounded-lg">
           <div className="mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight">
             <h1>Meet Our Officers:</h1>
@@ -72,12 +72,12 @@ function OfficerCarousel() {
 
             <div
               id="slider"
-              className=" h-[500px] xs:h-[500px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xl:w-[1300px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth xs:scrollbar-hide sm:scrollbar-default md:scrollbar-hide"
+              className=" h-[500px] xs:h-[4500px] xs:w-[850px] sm:h-[500px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xl:w-[1500px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth xs:scrollbar-hide sm:scrollbar-default md:scrollbar-hide"
             >
               {data.map((item) => (
                 <div
                   key={item.id}
-                  className="w-[520px] h-[450px] xs:w-[260px] xs:h-[1500px] sm:w-[250px] sm:h-[150px] md:w-[300px] lg:w-[356px] xl:w-[330px] xl:px-[40px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full"
+                  className="w-[520px] h-[450px] xs:w-[200px] xs:h-[350px] sm:w-[250px] sm:h-[150px] md:w-[300px] lg:w-[356px] xl:w-[330px] xs:py-4 xl:px-[40px] inline-block sm:p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full"
                   onClick={() => openPopup(item)}
                 >
                   <div className="rounded-t-lg relative hover:drop-shadow-[0px_10px_15px_rgba(255,204,55,0.5)] hover:shadow-2xl ">
@@ -86,8 +86,8 @@ function OfficerCarousel() {
                       src={item.img}
                       alt="Officer Images"
                     />
-                    <div className="h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[150px] md:w-[185px] lg:w-[236px] xl:w-[250px] z-0">
-                      <h2 className="text-xl font-bold xs:text-sm sm:text-sm md:text-md lg:text-lg">
+                    <div className="h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[150px] md:w-[185px] lg:w-[236px] xl:w-[230px] z-0">
+                      <h2 className="text-xl font-bold xs:text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg">
                         {item.name}
                       </h2>
                       <p className="text-gray-600 font-semibold sm:text-xs md:text-md lg:text-lg">
