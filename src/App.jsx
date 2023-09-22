@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <>
-      <div className=" bg-opacity-100">
+      <div>
       <NavBar/>
       <Hero/>
       
