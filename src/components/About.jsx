@@ -1,7 +1,7 @@
 function About() {
   return (  
     <>
-      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-60 h-min w-full ">
+      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center pt-[20rem] h-min w-full ">
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
           {/* heading & cta */}
