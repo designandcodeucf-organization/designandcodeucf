@@ -64,10 +64,10 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48'>
-<div className='bg-[#252526] rounded-lg'>
+    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48'> 
+    <div className='bg-[#252526] rounded-lg'>
     <div className='mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight'>
-    <h1 className='text-lg'>Meet Our Officers:</h1>
+    <h2 className='text-[4.2rem]'>Meet Our Officers:</h2>
     </div>
       <div className='sm:relative flex items-center justify-center'>
         
@@ -87,7 +87,7 @@ function OfficerCarousel () {
         <div className='rounded-t-lg relative hover:drop-shadow-[rem_1rem_15px_rgba(255,204,55,0.5)] hover:shadow-2xl '>
         <img className='rounded-t-lg object-cover transition duration-300 sm:w-[15rem] md:w-[185px] lg:w-[35rem] xl:w-[40rem] z-40  ' src={item.img} alt='Officer Images' />
         <div className='h-[10rem] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[15rem] md:w-[185px] lg:w-[236px] xl:w-[25rem] z-0'>
-        <h2 className='text-xl font-bold xs:text-sm sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
+        <h2 className='text-[1.6rem] font-bold xs:text-[1.6rem] sm:text-[1.6rem] md:text-[1.6rem] lg:text-[1.6rem]'>{item.name}</h2>
         <p className='text-gray-600 font-semibold sm:text-xs md:text-md lg:text-lg'>{item.position}</p>
         <p className='text-gray-800 text-sm'>{item.readMore}</p>
       </div>
