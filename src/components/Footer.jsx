@@ -3,7 +3,7 @@ function Footer() {
   //
  return(
  
-<footer className=" rounded-lg shadow m-4">
+<footer className=" rounded-lg shadow m-4 fles items-center justify-center">
     <div className="w-full max-w-screen-xl p-4 md:py-6">
         <div className="sm:flex sm:items-center sm:justify-between ">
            
