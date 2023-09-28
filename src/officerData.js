@@ -140,6 +140,7 @@ export const data = [
         // Add more social icons here
       ]
     },
+
     {
       id: 9,
       img: 'src/assets/officerHeadshots/Andres1600x1600.jpg',
