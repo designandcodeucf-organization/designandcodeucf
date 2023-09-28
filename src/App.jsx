@@ -10,11 +10,11 @@ function App() {
   return (
     <>
     <main className= " h-full box-border m-0 p-0">
-      <div className="">
+      <div className="flex flex-col mt-[8rem] gap-[4rem]">
         <Hero/>
         <Offerings/>
         <OfficerCarousel/>
-        <Socials/>
+        {/* <Socials/> */}
         
         {/* <Footer /> */}
 

@@ -64,8 +64,8 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-16 md:mr-16 lg:ml-16 lg:mr-16 xl:ml-48 xl:mr-48'> 
-    <div className='bg-[#252526] rounded-lg'>
+    <div className=' xl:ml-48 xl:mr-48'> 
+    <div className='rounded-lg'>
     <div className='mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight'>
     <h2 className='text-[4.2rem]'>Meet Our Officers:</h2>
     </div>
