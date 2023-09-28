@@ -1,21 +1,18 @@
 import { easeInOut, motion } from 'framer-motion';
 
-export default function Star({ width, hex, top, position, rotate, delay}) {
+export default function Star({ width, hex, top, position, rotate }) {
   return (
-    <div className={`z-1 h-auto w-auto rotate-${rotate}`}>
-      <div className={`absolute -top-${top} ${position}-0 animate-loadIn motion-reduce:animate-none`}>
+      <div className={`absolute ${position} animate-loadIn motion-reduce:animate-none`}>
         <motion.svg
           width={`${width}`}
           height="52"
           viewBox="0 0 52 52"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-11 md:w-auto"
           animate={{
-            rotate: [-10, 10], // Define a rotation animation for shaking.
+            rotate: [0, 5, 0, -5, 0], // Define a rotation animation for shaking.
           }}
           transition={{
-            duration: 2,
+            duration: 0.8,
             ease: easeInOut,
             repeat: Infinity, // Set the shake animation to repeat indefinitely.
           }}
@@ -26,6 +23,5 @@ export default function Star({ width, hex, top, position, rotate, delay}) {
           />
         </motion.svg>
       </div>
-    </div>
   );
 }
