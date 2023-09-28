@@ -1,6 +1,6 @@
 import { easeInOut, motion } from 'framer-motion';
 
-export default function Star({ width, hex, top, position, rotate }) {
+export default function Star({ width, hex, position, rotate, delay }) {
   return (
       <div className={`absolute ${position} animate-loadIn motion-reduce:animate-none`}>
         <motion.svg
@@ -9,12 +9,14 @@ export default function Star({ width, hex, top, position, rotate }) {
           viewBox="0 0 52 52"
           xmlns="http://www.w3.org/2000/svg"
           animate={{
-            rotate: [0, 5, 0, -5, 0], // Define a rotation animation for shaking.
+            rotate: [10, -10], // Define a rotation animation for shaking.
           }}
           transition={{
             duration: 0.8,
             ease: easeInOut,
+            repeatType: "mirror",
             repeat: Infinity, // Set the shake animation to repeat indefinitely.
+            delay: `${delay}`
           }}
         >
           <path

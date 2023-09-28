@@ -42,13 +42,13 @@ function Hero() {
             hex="#EFE9F4"
             width={24}
             position="-left-[.4rem] top-[3.2rem]"
-            delay={1}
+            delay={3}
           />
           <Star
             hex="#E75A7C"
             width={24}
             position="-right-[.4rem] top-[3.2rem]"
-            delay={1}
+            delay={1.5}
           />
         </div>
       </section>
