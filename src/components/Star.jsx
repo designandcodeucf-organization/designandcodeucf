@@ -9,14 +9,13 @@ export default function Star({ width, hex, position, rotate, delay }) {
           viewBox="0 0 52 52"
           xmlns="http://www.w3.org/2000/svg"
           animate={{
-            rotate: [10, -10], // Define a rotation animation for shaking.
+            rotate: rotate, // Define a rotation animation for shaking.
           }}
           transition={{
             duration: 0.8,
             ease: easeInOut,
             repeatType: "mirror",
             repeat: Infinity, // Set the shake animation to repeat indefinitely.
-            delay: `${delay}`
           }}
         >
           <path

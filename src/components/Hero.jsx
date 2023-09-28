@@ -27,15 +27,15 @@ function Hero() {
             hex="#FACC15"
             width={52}
             position="-left-[.4rem] -top-[1.6rem]"
-            delay={2}
+            delay={5}
+            rotate={[10, -10]}
           />
           <Star
             hex="#5DA9E9"
             width={52}
-            top="1.6rem"
             position="-right-[.4rem] -top-[1.6rem]"
-
             delay={1}
+            rotate={[-10, 10]}
 
           />
           <Star
@@ -43,12 +43,14 @@ function Hero() {
             width={24}
             position="-left-[.4rem] top-[3.2rem]"
             delay={3}
+            rotate={[10, -10]}
           />
           <Star
             hex="#E75A7C"
             width={24}
             position="-right-[.4rem] top-[3.2rem]"
             delay={1.5}
+            rotate={[-10, 10]}
           />
         </div>
       </section>
