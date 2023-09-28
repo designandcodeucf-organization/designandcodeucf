@@ -1,5 +1,5 @@
 import { delay } from "framer-motion"
-import Bubble from "./Bubble"
+import Star from "./Star"
 
 
 function Hero() {
@@ -7,7 +7,7 @@ function Hero() {
     <>
       <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center h-min w-full ">
         {/* hero inner */}
-        <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[124rem] w-full">
+        <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[50rem] w-full">
           {/* heading & cta */}
           <div className="z-2 relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center h-min max-w-[44.8rem] w-full">
             <div className="relative flex flex-col flex-none flex-nowrap items-center justify-center gap-4 overflow-hidden h-min w-full">
@@ -23,7 +23,18 @@ function Hero() {
               <button className="transition duration-200 hover:scale-105 text-md bg-white font-bold rounded-xl py-4 px-4 mt-8">Become a member</button>
             {/* </div> */}
           </div>
-        
+          <Star
+            hex="#facc15"
+            width={52}
+            top="16"
+            position="left"
+          />
+          <Star
+            hex="#facc15"
+            width={52}
+            top="16"
+            position="right"
+          />
         </div>
       </section>
     </>
