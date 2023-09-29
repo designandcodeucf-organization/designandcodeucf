@@ -32,7 +32,7 @@ export const data = [
       description:'As vice president of Design & Code, Alan is a huge collaborator. Born in Japan and raised in Canada and the U.S., he works hard to bring people together to learn about coding and create web designs. In his spare time, he builds cars, watches anime, and rides on his longboard.',
       socials:'Where to reach Alan:',
       icons: [
-        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/' },
+        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/alan-giraldo-87321b1b6/' },
       { socialName: 'GitHub', link: 'https://github.com/2jzAlan' },
       { socialName: 'Email', link: 'mailto:ar464589@ucf.edu' }
         // Add more social icons here
@@ -101,7 +101,7 @@ export const data = [
       socials:'Where to reach Jolina:',
       icons: [
         { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/jolina-jassal-15ba681b4' },
-      { socialName: 'GitHub', link: 'https://github.com/' },
+      { socialName: 'GitHub', link: 'https://github.com/jolijass' },
       { socialName: 'Email', link: 'mailto: jo625763@ucf.edu ' }
         // Add more social icons here
       ]
@@ -126,7 +126,7 @@ export const data = [
     {
       id: 8,
       img: 'src/assets/officerHeadshots/Mya1600x1600.jpg',
-      name:' Mya Mosley',
+      name:' Mya Mosely',
       position:'Event Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',

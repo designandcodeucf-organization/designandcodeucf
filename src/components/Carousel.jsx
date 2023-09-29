@@ -1,54 +1,50 @@
-import React, { useState, useEffect } from 'react';
-import { data } from '../officerData.js';
-import 'react-multi-carousel/lib/styles.css';
-import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
-import { socialIcon } from 'react-social-icons';
+import React, { useState, useEffect } from "react";
+import { data } from "../officerData.js";
+import "react-multi-carousel/lib/styles.css";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-
-
-function OfficerCarousel () {
-
-  
-
+function OfficerCarousel() {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const slideLeft = () => {
-    var slider = document.getElementById('slider');
+    var slider = document.getElementById("slider");
     const windowWidth = window.innerWidth;
-  
+
     let scrollLength;
     if (windowWidth < 640) {
       scrollLength = 50; //smaller screens
     } else if (windowWidth < 768) {
       scrollLength = 250; //medium screens
-    } else if (windowWidth < 1200){
+    } else if (windowWidth < 1200) {
       scrollLength = 350; //larger screens
-    }else if (windowWidth < 1650){
+    } else if (windowWidth < 1650) {
       scrollLength = 550;
     } else {
-      scrollLength = 1075
+      scrollLength = 1000;
     }
-  
+
+
+
     slider.scrollLeft = slider.scrollLeft - scrollLength;
   };
-  
+
   const slideRight = () => {
-    var slider = document.getElementById('slider');
+    var slider = document.getElementById("slider");
     const windowWidth = window.innerWidth;
-  
+
     let scrollLength;
     if (windowWidth < 640) {
       scrollLength = 50; //smaller screens
     } else if (windowWidth < 768) {
       scrollLength = 250; //medium screens
-    } else if (windowWidth < 1200){
+    } else if (windowWidth < 1200) {
       scrollLength = 350; //larger screens
-    }else if (windowWidth < 1650){
-        scrollLength = 550;
+    } else if (windowWidth < 1650) {
+      scrollLength = 610;
     } else {
-      scrollLength = 1075
+      scrollLength = 1000;
     }
-  
+
     slider.scrollLeft = slider.scrollLeft + scrollLength;
   };
 
@@ -59,8 +55,6 @@ function OfficerCarousel () {
   const closePopup = () => {
     setSelectedMember(null);
   };
-
-
 
   return (
     <>
@@ -144,16 +138,15 @@ function OfficerCarousel () {
         ))}
       </div>
 
-      <button
-        className='mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block'
-        onClick={closePopup}
-      >
-        Close
-      </button>
-    </div>
-  </div>
-)}
-
+            <button
+              className="mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block"
+              onClick={closePopup}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
