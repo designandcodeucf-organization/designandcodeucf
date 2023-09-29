@@ -7,8 +7,8 @@ function Footer() {
     <div className="w-full max-w-screen-xl p-4 md:py-6">
         <div className="sm:flex sm:items-center sm:justify-between ">
            
-            <a href="https://flowbite.com/" className="flex items-center justify-start mb-4 sm:mb-0">
-                <img src={triangleLogo} className="h-[125px] w-auto" alt="Flowbite Logo" />
+            <a href="/" className="flex items-center justify-start mb-4 sm:mb-0">
+                <img src={triangleLogo} className="h-[115px] w-auto" alt="Design&Code Logo" />
                 <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white uppercase">Design&Code</span>
             </a>
             
