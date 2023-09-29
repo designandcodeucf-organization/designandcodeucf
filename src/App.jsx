@@ -10,10 +10,13 @@ function App() {
 
   return (
     <div className="App">
-      <>
       <div>
       <NavBar/>
       <Hero/>
+      <div>
+        <About/>
+      <Offerings />
+      </div>
       
       <OfficerCarousel/>
       </div>
@@ -21,10 +24,10 @@ function App() {
       
         <Footer />
       </div>
-    
-  </>
+    </div>
   
   );
 }
+
 
 export default App;
