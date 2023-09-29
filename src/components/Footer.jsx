@@ -6,7 +6,7 @@ function Footer() {
       <div className="w-full max-w-screen-xl p-4 md:py-6">
         <div className="sm:flex sm:items-center sm:justify-between ">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center justify-start mb-4 sm:mb-0"
           >
             <img
