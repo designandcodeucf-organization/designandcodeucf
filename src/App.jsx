@@ -9,17 +9,19 @@ import Socials from "./components/Socials.jsx"
 function App() {
 
   return (
-    <>
-    <main className= " h-full box-border m-0 p-0">
-      <div className="flex flex-col mt-[8rem] gap-[4rem]">
-        <NavBar/>
-        <Hero/>
-        <Offerings/>
-        <About/>
-        <OfficerCarousel/>
+    <div className="App">
+      <>
+      <div>
+      <NavBar/>
+      <Hero/>
+      
+      <OfficerCarousel/>
+      </div>
+    <div className="h-full box-border m-0 p-0">
+      
         <Footer />
       </div>
-    </main>
+    
   </>
   
   );

@@ -1,4 +1,4 @@
-import triangleLogo from "../assets/Design&Code Triangle (transparent).png";
+import triangleLogo from "../assets/DesignCodeTriLogo.png";
 function Footer() {
   //
   return (
@@ -7,7 +7,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between ">
            
             <a href="/" className="flex items-center justify-start mb-4 sm:mb-0">
-                <img src={triangleLogo} className="h-[115px] w-auto" alt="Design&Code Logo" />
+                <img src={triangleLogo} className="h-[90px] w-auto" alt="Design&Code Logo" />
                 <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white uppercase">Design&Code</span>
             </a>
             
