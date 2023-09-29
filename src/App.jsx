@@ -15,6 +15,7 @@ function App() {
         <NavBar/>
         <Hero/>
         <Offerings/>
+        <About/>
         <OfficerCarousel/>
         <Footer />
       </div>
