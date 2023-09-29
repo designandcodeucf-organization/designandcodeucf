@@ -7,25 +7,22 @@ import Offerings from "./components/Offerings.jsx"
 import Socials from "./components/Socials.jsx"
 
 function App() {
-
   return (
+<<<<<<<<< Temporary merge branch 1
     <div className="App">
+      
       <div>
       <NavBar/>
-      <Hero/>
-      <div>
-        <About/>
-      <Offerings />
-      </div>
-      
-      <OfficerCarousel/>
-      </div>
-    <div className="h-full box-border m-0 p-0">
-      
-        <Footer />
-      </div>
-    </div>
-  
+      <main className="mt-4 box-border m-0 p-0">
+        <div className=" flex flex-col gap-[4rem]">
+          <Hero/>
+          <Offerings/>
+          <About/>
+          <OfficerCarousel/>
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 }
 
