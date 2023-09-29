@@ -8,13 +8,13 @@ function Offerings() {
               <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
                 <img className="w-[16rem] h-[16rem] rounded-xl" src="src/assets/javascript.png" alt="JavaScript"></img>
                 <h2 className="text-white text-[1.6rem] font-semibold pt-3">Learn about Javascript</h2>
-                <p className="text-[#777777] text-md font-semibold">Learn about the fundamental concepts of JavaScript.</p>
+                <p className="text-[#777777] text-md font-semibold">Learn about the fundamental concepts of JavaScript and it's libraries.</p>
               </div>
             </div>
             <div className="flex-col flex-nowrap flex">
               <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
                 <h2 className="text-white  text-[1.6rem] font-semibold">Attend live workshops</h2>
-                <p className="text-[#777777] text-md font-semibold">We are a UCF student club that specializes in web design. Dedicated and focused on creating content for the digital world.</p>
+                <p className="text-[#777777] text-md font-semibold">Attend our hands-on workshops to sharpen your web design skills.</p>
               </div>
             </div>
           </div>

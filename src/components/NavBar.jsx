@@ -6,7 +6,7 @@ function NavBar(){
     
     return(
         <>
-        <h1 className="text-white">navbar</h1>
+        <h1 className="text-white text-[1.6rem]" >navbar</h1>
         <div>{exampleElement}</div>
         </>
     )
