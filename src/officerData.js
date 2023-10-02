@@ -174,7 +174,4 @@ export const data = [
       ]
     },
   ];
-
-  
-
   
