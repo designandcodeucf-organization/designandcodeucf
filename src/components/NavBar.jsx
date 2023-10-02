@@ -4,30 +4,6 @@ import dcLogo from '../assets/DesignCodeTriLogo.png';
 function NavBar(){
         
     return(
-<<<<<<< HEAD
-        <nav className=" bg-opacity-100 flex flex-row justify-around float-right">
-        
-            {/* main page navbar links */}
-            <div className="m-8 ">
-                <ul className="flex items-center gap-[3vw] mx-auto">
-                    <li className="text-white transition hover:text-gray-500">
-                        <a href="#">Home</a>
-                    </li>
-                    <li className="text-white transition hover:text-gray-500">
-                        <a href="#officers">About Us</a>
-                    </li>
-                    <li className="text-white transition hover:text-gray-500">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            
-            {/* Sign up button */}
-            <div className="m-8">
-                <button className="text-white transition hover:text-gray-500 w-[89px] h-[34px] left-[1043.5px] top-[41.5px] rounded-full bg-[#252526]">Sign Up</button>
-            </div>
-        </nav>
-=======
         <>
         <nav className=" nav-bar w-full block items-center py-4 px-16 justify-end fixed z-20 bg-[#0b0b0e]">
         
@@ -49,17 +25,16 @@ function NavBar(){
       <a href="#AboutUs" className="block mt-4 lg:mt-0 text-white hover:text-primaryLightBlue mr-4">
         About Us
       </a>
-      <a href="#Contact" className="block mt-4 lg:mt-0 text-white hover:text-primaryLightBlue mr-4">
+      <a href="https://linktr.ee/designandcodeucf" className="block mt-4 lg:mt-0 text-white hover:text-primaryLightBlue mr-4">
         Contact
       </a>
 
-      <a href="BecomeAMember" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0">Become A Member</a>
+      <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0">Become A Member</a>
       
     </div>
   </div>
         </nav>
         </>
->>>>>>> 84bc3f61fb8b32066b391b3252ad11cc078bc18e
     )
 }
 

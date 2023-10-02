@@ -1,4 +1,4 @@
-import triangleLogo from "../assets/Design&Code Triangle (transparent).png";
+import triangleLogo from '../assets/DesignCodeTriLogo.png';
 function Footer() {
   //
  return(
