@@ -126,7 +126,7 @@ export const data = [
     {
       id: 8,
       img: 'src/assets/officerHeadshots/Mya1600x1600.jpg',
-      name:' Mya Mosley',
+      name:' Mya Mosely',
       position:'Event Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Digital Media - Web Design',
@@ -140,25 +140,9 @@ export const data = [
         // Add more social icons here
       ]
     },
+
     {
       id: 9,
-      img: 'src/assets/officerHeadshots/Jaden1600x1600.jpg',
-      name:'Jaden Lewis-Chambers',
-      position:'Webmaster',
-      readMore:'Click to learn more',
-      major: 'Major: Digital Media - Web Design',
-      minor:'Minor Computer Science',
-      description:"Jaden is an event coordinator and webmaster, leading a team of web developers in creating Design & Code's official website. While he is skilled in coding, he is also passionate about design and digital art. He is also minoring in Computer Science and makes music in his spare time.",
-      socials:'Where to reach Jaden:',
-      icons: [
-        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/' },
-      { socialName: 'GitHub', link: 'https://github.com/jaden416' },
-      { socialName: 'Email', link: '' }
-        // Add more social icons here
-      ]
-    },
-    {
-      id: 10,
       img: 'src/assets/officerHeadshots/Andres1600x1600.jpg',
       name:'Andres Rodriguez',
       position:'Community Builder',

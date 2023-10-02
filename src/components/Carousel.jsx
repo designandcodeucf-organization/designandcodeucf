@@ -64,10 +64,10 @@ function OfficerCarousel () {
 
   return (
     <>
-    <div className='xs:ml-16 xs:mr-16 sm:ml-8 sm:mr-8 md:ml-8 md:mr-8 lg:ml-16 lg:mr-16 xl:ml-16 xl:mr-16'>
-<div className='bg-[#252526] rounded-lg'>
+    <div className=' xl:ml-48 xl:mr-48'> 
+    <div className='rounded-lg'>
     <div className='mt-48 xs:text-2xl sm:text-4xl  py-8 text-center font-bold text-primaryLight'>
-    <h1 id="AboutUs">Meet Our Officers:</h1>
+    <h2 className='text-[4.2rem]'>Meet Our Officers:</h2>
     </div>
       <div className='sm:relative flex items-center justify-center'>
         
@@ -75,21 +75,21 @@ function OfficerCarousel () {
     
         <div
           id='slider'
-          className=' h-[500px] xs:h-[500px] xs:w-[450px] sm:w-[1000px] md:w-[1200px] lg:w-[900px] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className=' h-[50rem] xs:h-[50rem] xs:w-[45rem] sm:w-[100rem] md:w-[120rem] lg:w-[90rem] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
       <div
         key={item.id}
-        className='w-[520px] h-[450px] xs:w-[260px] xs:h-[1500px] sm:w-[250px] sm:h-[150px] md:w-[300px] lg:w-[356px] xl:w-[330px] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
+        className='w-[52rem] h-[45rem] xs:w-[26rem] xs:h-[150rem] sm:w-[25rem] sm:h-[15rem] md:w-[30rem] lg:w-[35.6rem] xl:w-[33rem] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full'
         onClick={() => openPopup(item)}
       >
 
-        <div className='rounded-t-lg relative hover:drop-shadow-[0px_10px_15px_rgba(255,204,55,0.5)] hover:shadow-2xl '>
-        <img className='rounded-t-lg object-cover transition duration-300 sm:w-[150px] md:w-[185px] lg:w-[350px] xl:w-[400px] z-40  ' src={item.img} alt='Officer Images' />
-        <div className='h-[100px] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[150px] md:w-[185px] lg:w-[236px] xl:w-[250px] z-0'>
-        <h2 className='text-xl font-bold xs:text-sm sm:text-sm md:text-md lg:text-lg'>{item.name}</h2>
-        <p className='text-gray-600 font-semibold sm:text-xs md:text-md lg:text-lg'>{item.position}</p>
-        <p className='text-gray-800 text-sm'>{item.readMore}</p>
+        <div className='rounded-t-lg relative hover:drop-shadow-[rem_1rem_15px_rgba(255,204,55,0.5)] hover:shadow-2xl '>
+        <img className='rounded-t-lg object-cover transition duration-300 sm:w-[15rem] md:w-[18.5rem] lg:w-[35rem] xl:w-[40rem] z-40  ' src={item.img} alt='Officer Images' />
+        <div className='h-[10rem] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[15rem] md:w-[18.5rem] lg:w-[23.6rem] xl:w-[25rem] z-0'>
+        <h2 className='text-[1.6rem] font-bold xs:text-[1.6rem] sm:text-[1.6rem] md:text-[1.6rem] lg:text-[1.6rem]'>{item.name}</h2>
+        <p className='text-gray-600 font-semibold text-[1.6rem] sm:text-[1.6rem] md:text-[1.6rem] lg:text-[1.6rem]'>{item.position}</p>
+        <p className='text-gray-800 text-[1.4rem]'>{item.readMore}</p>
       </div>
         </div>
 
@@ -107,23 +107,23 @@ function OfficerCarousel () {
   <div className='pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75' onClick={closePopup}>
     
 
-    <div className='pop-up-box z-30 xs:w-[400px] xs:h-[625px] sm:w-[500px] sm:h-[625px] md:w-[550px] md:h-[625px] lg:w-[700px] lg:h-[625px] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
+    <div className='pop-up-box xs:w-[40rem] xs:h-[62.5rem] sm:w-[50rem] sm:h-[62.5rem] md:w-[55rem] md:h-[62.5rem] lg:w-[70rem] lg:h-[62.5rem] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg'  >
       <img
         src={selectedMember.img} 
         alt={selectedMember.name}
-        className='w-[200px] h-[200px] xs:w-[125px] xs:h-[125px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] object-cover rounded-full mx-auto mb-4'
+        className='w-[20rem] h-[20rem] xs:w-[12.5rem] xs:h-[12.5rem] sm:w-[12.5rem] sm:h-[12.5rem] md:w-[15rem] md:h-[15rem] object-cover rounded-full mx-auto mb-4'
       />
-      <h2 className='text-white sm:text-[22px] font-bold text-center'>{selectedMember.name}</h2>
-      <p className='text-white font-semibold lg:text-xl text-center py-2'>
+      <h2 className='text-white sm:text-[2.2rem] font-bold text-center'>{selectedMember.name}</h2>
+      <p className='text-white font-semibold lg:text-xl text-center py-2 sm:text-[1.4rem]'>
         {selectedMember.position}
       </p>
-      <p className='text-white font-semibold text-center sm:text-[14px]'>
+      <p className='text-white font-semibold text-center sm:text-[1.4rem]'>
         {selectedMember.major}
       </p>
-      <p className='text-white font-semibold text-center sm:text-[14px]'>
+      <p className='text-white font-semibold text-center sm:text-[1.4rem]'>
         {selectedMember.minor}
       </p>
-      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-[16px] lg:text-[18px] lg:px-16 '>{selectedMember.description}</p>
+      <p className='text-white px-24 py-4 text-center xs:text-sm xs:px-2 sm:text-[1.6rem] lg:text-[1.8rem] lg:px-16 '>{selectedMember.description}</p>
       <div>
 
       </div>
@@ -136,7 +136,7 @@ function OfficerCarousel () {
           href={icon.link}
           target="_blank"  // This attribute opens the link in a new tab
           rel="noopener noreferrer"  // Recommended for security and accessibility
-          className="mr-4 text-white px-4 font-extrabold text-lg hover:bg-primaryLightBlue rounded"
+          className="mr-4 text-white px-4 font-extrabold text-[1.6rem] hover:bg-primaryLightBlue rounded"
         >
           {icon.socialName}
           
