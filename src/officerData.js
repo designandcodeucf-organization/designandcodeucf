@@ -142,7 +142,7 @@ export const data = [
     {
       id: 9,
       img: '',
-      name:'Matthew ',
+      name:'Matthew Sand',
       position:'Event Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Computer Science',
