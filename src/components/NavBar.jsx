@@ -49,8 +49,10 @@ function NavBar() {
               Contact
             </a>
             <a
-              href="BecomeAMember"
+              href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
+              target="_blank"
               className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0"
+              rel="noreferrer"
             >
               Become A Member
             </a>
