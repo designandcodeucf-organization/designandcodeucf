@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { data } from "../officerData.js";
 import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
