@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <main className="mt-4 box-border m-0 p-0">
+      <main className="mt-[10rem] box-border m-0 p-0">
         <div className=" flex flex-col gap-[4rem]">
           <Hero/>
           <Offerings/>
