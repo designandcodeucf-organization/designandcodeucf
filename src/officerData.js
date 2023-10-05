@@ -142,18 +142,18 @@ export const data = [
 
     {
       id: 9,
-      img: '',
+      img: 'src/assets/officerHeadshots/matthew1600x1600.jpg',
       name:'Matthew Sand',
       position:'Event Coordinator',
       readMore:'Click to learn more',
       major: 'Major: Computer Science',
       minor:'',
-      description:"Matthew is one of the event coordinators...",
-      socials:'Where to reach Jaden:',
+      description:"Matthew is one of the event coordinators who has a passion for web development. He is eager to organize events that inspire others in the same field. In his free time, Matthew enjoys cooking, gaming, reading, and planning memorable moments with friends. ",
+      socials:'Where to reach Matthew:',
       icons: [
-        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/' },
-      { socialName: 'GitHub', link: 'https://github.com/jaden416' },
-      { socialName: 'Email', link: '' }
+        { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/matthew-sand' },
+      { socialName: 'GitHub', link: 'https://github.com/Quickzand' },
+      { socialName: 'Email', link: 'mailto:ma941728@ucf.edu' }
         // Add more social icons here
       ]
     },
