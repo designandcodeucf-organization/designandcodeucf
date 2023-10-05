@@ -64,7 +64,7 @@ function OfficerCarousel() {
 
   return (
     <>
-      <div className=" xs:ml-[4rem] xs:mr-[4rem] sm:ml-[4rem] sm:mr-[4rem] md:ml-[8rem] md:mr-[8rem] lg:ml-[16rem] lg:mr-[16rem] xl:ml-[32rem] xl:mr-[32rem] ">
+      <div className=" xs:ml-[4rem] xs:mr-[4rem] sm:ml-[4rem] sm:mr-[4rem] md:ml-[8rem] md:mr-[8rem] lg:ml-[16rem] lg:mr-[16rem] xl:ml-[24rem] xl:mr-[24rem] ">
         <div className="bg-[#1B1B1B] rounded-xl flex-col ">
           <div className="mt-48 xs:text-2xl sm:text-4xl text-center font-bold text-primaryLight">
             <h2 className="text-[4.2rem] p-[2rem]">Meet Our Officers:</h2>
@@ -78,7 +78,7 @@ function OfficerCarousel() {
 
             <div
               id="slider"
-              className=" sm:h-[50rem] xs:h-[100rem] xs:w-[55rem] sm:w-[35rem] md:w-[75rem] lg:w-[85rem] xl:w-[95rem] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+              className="sm:h-[35rem] xs:h-[100rem] xs:w-[55rem] sm:w-[35rem] md:w-[75rem] lg:w-[85rem] xl:w-[95rem] xs:flex xs:flex-row sm:flex sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
             >
               {data.map((item) => (
                 <div
