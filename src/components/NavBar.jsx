@@ -43,7 +43,7 @@ function NavBar() {
               <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">                
                 <a onClick={toggleStyles} href="#Home" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</a>
                 <a onClick={toggleStyles} href="#AboutUs" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> About Us</a>
-                <a href="#Contact" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> Contact </a>
+                <a href="mailto:designcodeatucf@gmail.com" target="_blank" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> Contact </a>
                 <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0">
                   Become A Member
                 </a>
