@@ -20,7 +20,8 @@ function Hero() {
             </div>
 
             {/* <div className="flex items-center justify-center gap-10 h-min-content overflow-hidden relative w-min-content"> */}
-              <button className="transition duration-200 hover:scale-105 text-md bg-white font-bold rounded-xl py-4 px-4 mt-8">Become a member</button>
+              
+              <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="transition duration-200 hover:scale-105 text-md bg-white font-bold rounded-xl py-4 px-4 mt-8">Become a member</a>
             {/* </div> */}
           </div>
           <Star

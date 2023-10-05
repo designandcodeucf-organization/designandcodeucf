@@ -20,7 +20,9 @@ function NavBar() {
             />
           </div>
           <div className="z-50 flex md:hidden">
-            <button onClick={toggleStyles} className="flex ml-auto items-center px-3 py-2 border rounded text-white border-black hover:text-white hover:border-white">
+            <button onClick={toggleStyles} className="flex ml-auto items-center px-3 py-2 border rounded text-white border-black hover:text-white hover:border-white"
+            >
+
               {isActive 
               ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
               : <svg
@@ -42,7 +44,7 @@ function NavBar() {
                 <a href="#Home" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</a>
                 <a href="#AboutUs" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> About Us</a>
                 <a href="#Contact" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> Contact </a>
-                <a href="BecomeAMember" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0">
+                <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0">
                   Become A Member
                 </a>
               </ul>
