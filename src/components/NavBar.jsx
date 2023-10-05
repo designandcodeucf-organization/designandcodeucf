@@ -6,6 +6,8 @@ function NavBar() {
   const toggleStyles = () => {
     setIsActive(!isActive);
   };
+
+
   return (
     <>
       <header className="p-[2rem] flex w-full items-center justify-center sticky top-[0] z-50 bg-black border-b border-solid border-[#141414]">
@@ -19,17 +21,23 @@ function NavBar() {
           </div>
           <div className="z-50 flex md:hidden">
             <button onClick={toggleStyles} className="flex ml-auto items-center px-3 py-2 border rounded text-white border-black hover:text-white hover:border-white">
-              <svg
+              {isActive 
+              ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+              : <svg
                 className="fill-current h-[1.6rem] w-[1.6]"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <title>Menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
+                </svg>
+              }
+
+              
+
             </button>
           </div>
-            <nav className={`${isActive ? "yo:opacity-1" : "yo:opacity-0"} fixed inset-0 z-40 h-[100dvh] overflow-auto md:relative md:h-auto md:overflow-visible`}>
+            <nav className={`${isActive ? "yo:opacity-1" : "yo:opacity-0"} fixed inset-0 z-40 h-[100vh] overflow-auto md:relative md:h-auto md:overflow-visible`}>
               <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">                
                 <a href="#Home" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</a>
                 <a href="#AboutUs" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> About Us</a>
