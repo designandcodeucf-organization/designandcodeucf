@@ -14,13 +14,13 @@ function OfficerCarousel() {
     if (windowWidth < 640) {
       scrollLength = 250; // smaller screens
     } else if (windowWidth < 768) {
-      scrollLength = 300; // medium screens
+      scrollLength = 400; // medium screens
     } else if (windowWidth < 992) {
       scrollLength = 400; // larger screens
     } else if (windowWidth < 1200) {
       scrollLength = 525; // extra-large screens
     } else if (windowWidth < 1440) {
-      scrollLength = 650; // 2K screens
+      scrollLength = 525; // 2K screens
     } else if (windowWidth < 1650) {
       scrollLength = 725; // 2.5K screens
     } else {
@@ -38,13 +38,13 @@ function OfficerCarousel() {
     if (windowWidth < 640) {
       scrollLength = 250; // smaller screens
     } else if (windowWidth < 768) {
-      scrollLength = 300; // medium screens
+      scrollLength = 400; // medium screens
     } else if (windowWidth < 992) {
       scrollLength = 400; // larger screens
     } else if (windowWidth < 1200) {
       scrollLength = 525; // extra-large screens
     } else if (windowWidth < 1440) {
-      scrollLength = 650; // 2K screens
+      scrollLength = 525; // 2K screens
     } else if (windowWidth < 1650) {
       scrollLength = 725; // 2.5K screens
     } else {
@@ -64,7 +64,7 @@ function OfficerCarousel() {
 
   return (
     <>
-      <div className=" xs:ml-[4rem] xs:mr-[4rem] sm:ml-[4rem] sm:mr-[4rem] md:ml-[8rem] md:mr-[8rem] lg:ml-[16rem] lg:mr-[16rem] xl:ml-[32rem] xl:mr-[32rem] ">
+      <div className=" xs:ml-[4rem] xs:mr-[4rem] sm:ml-[4rem] sm:mr-[4rem] md:ml-[8rem] md:mr-[8rem] lg:ml-[16rem] lg:mr-[rem] xl:ml-[32rem] xl:mr-[32rem] ">
         <div className="bg-[#1B1B1B] rounded-xl flex-col ">
           <div className="mt-48 xs:text-2xl sm:text-4xl text-center font-bold text-primaryLight">
             <h2 className="text-[4.2rem] p-[2rem]">Meet Our Officers:</h2>
@@ -78,12 +78,12 @@ function OfficerCarousel() {
 
             <div
               id="slider"
-              className=" sm:h-[50rem] xs:h-[100rem] xs:w-[45rem] sm:w-[100rem] md:w-[120rem] lg:w-[90rem] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+              className=" sm:h-[50rem] xs:h-[100rem] xs:w-[55rem] sm:w-[35rem] md:w-[75rem] lg:w-[85rem] xl:w-[95rem] xs:flex xs:flex-row sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
             >
               {data.map((item) => (
                 <div
                   key={item.id}
-                  className="w-[52rem] h-[45rem] xs:w-[26rem] xs:h-[150rem] sm:w-[25rem] sm:h-[15rem] md:w-[30rem] lg:w-[35.6rem] xl:w-[33rem] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full"
+                  className="w-[52rem] h-[45rem] xs:w-[26rem] xs:h-[150rem] sm:w-[25rem] sm:h-[15rem] md:w-[30rem] lg:w-[25rem] xl:w-[30rem] inline-block p-8 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-full"
                   onClick={() => openPopup(item)}
                 >
                   <div className="rounded-t-lg relative hover:drop-shadow-[0.1rem_0.1rem_15px_rgba(255,204,55,0.5)] hover:shadow-2xl ">
@@ -92,11 +92,11 @@ function OfficerCarousel() {
                       src={item.img}
                       alt="Officer Images"
                     />
-                    <div className="h-[10rem] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[18rem] md:w-[20.5rem] lg:w-[23.6rem] xl:w-[25rem] z-0">
-                      <h2 className="text-[1.6rem] font-bold xs:text-[1.6rem] sm:text-[1.6rem] md:text-[1.6rem] lg:text-[1.6rem]">
+                    <div className="h-[10rem] bg-primaryLight px-4 py-4 rounded-b-lg sm:w-[14rem] md:w-[15rem] lg:w-[18rem] xl:w-[rem] z-0">
+                      <h2 className="text-[1.6rem] font-bold xs:text-[1.6rem] sm:text-[1.2rem] md:text-[1.4rem] lg:text-[1.6rem]">
                         {item.name}
                       </h2>
-                      <p className="text-gray-600 font-semibold text-[1.6rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.6rem]">
+                      <p className="text-primaryDarkBlue font-semibold text-[1.6rem] sm:text-[1.1rem] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.4rem] ">
                         {item.position}
                       </p>
                       <p className="text-gray-800 xs:text-[1.2rem] md:text-[1.4rem]">
