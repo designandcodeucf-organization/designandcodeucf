@@ -39,7 +39,7 @@ function NavBar() {
 
             </button>
           </div>
-            <nav className={`${isActive ? "yo:opacity-1" : "yo:opacity-0"} fixed inset-0 z-40 h-[100vh] overflow-auto md:relative md:h-auto md:overflow-visible`}>
+            <nav className={`${isActive ? "yo:opacity-1" : "yo:opacity-0"} fixed inset-0 z-40 h-full overflow-auto md:relative md:h-auto md:overflow-visible`}>
               <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">                
                 <a onClick={toggleStyles} href="#Home" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</a>
                 <a onClick={toggleStyles} href="#AboutUs" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> About Us</a>
