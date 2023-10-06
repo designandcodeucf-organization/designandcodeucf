@@ -61,7 +61,7 @@ function OfficerCarousel() {
   const closePopup = () => {
     setSelectedMember(null);
   };
-
+//
   return (
     <>
       <div className=" xs:ml-[4rem] xs:mr-[4rem] sm:ml-[4rem] sm:mr-[4rem] md:ml-[8rem] md:mr-[8rem] lg:ml-[16rem] lg:mr-[16rem] xl:ml-[24rem] xl:mr-[24rem] ">
