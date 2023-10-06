@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <>
       <nav
-        className=" nav-bar w-full block items-center py-4 px-16 justify-end fixed z-20"
+        className=" nav-bar w-full block items-center py-4 px-16 justify-end sticky z-20"
         style={{ backgroundColor: "rgba(11, 11, 14, 0.8)" }}
       >
         <div className="block lg:hidden">
