@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <>
       <nav
-        className=" nav-bar w-full block items-center py-4 px-16 justify-end sticky z-20"
+        className="  items-center py-4 px-16 justify-end sticky  top-[0] z-20"
         style={{ backgroundColor: "rgba(11, 11, 14, 0.8)" }}
       >
         <div className="block lg:hidden">
@@ -29,7 +29,7 @@ function NavBar() {
           </a>
         </div>
         <div className="w-full flex-row lg:flex lg:items-center lg:w-auto float-right">
-          <div className="text-sm flex lg:flex-row justify-center items-center float-right">
+          <div className="text-[1.6rem] flex lg:flex-row justify-center items-center float-right">
             <a
               href="#top"
               className="block mt-4  lg:mt-0 text-white hover:text-primaryLightBlue mr-4"
@@ -50,7 +50,7 @@ function NavBar() {
             </a>
             <a
               href="https://knightconnect.campuslabs.com/engage/organization/designandcode" target="_blank"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0"
+              className="inline-block text-[1.6rem] px-4 py-2 leading-none border rounded-2xl text-white border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue mt-4 lg:mt-0"
             >
               Become A Member
             </a>
