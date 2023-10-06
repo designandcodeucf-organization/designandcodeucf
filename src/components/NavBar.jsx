@@ -4,8 +4,9 @@ function NavBar() {
   return (
     <>
       <nav
-        className="  items-center py-4 px-16 justify-end sticky  top-[0] z-20"
-        style={{ backgroundColor: "rgba(11, 11, 14, 0.8)" }}
+        className="p-[2rem] flex max-w-[120.6rem] items-center justify-between sticky top-[0] z-50 bg-black mb-[4rem]"
+        style={{ backgroundColor: "rgba(11, 11, 14,.8)" }}
+
       >
         <div className="block lg:hidden">
           <button className="flex items-center px-3 py-2 border rounded text-white border-black hover:text-white hover:border-white">
