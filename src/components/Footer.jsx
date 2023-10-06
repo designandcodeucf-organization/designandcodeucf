@@ -5,44 +5,15 @@ function Footer() {
     <footer className=" rounded-lg shadow m-4 flex items-center justify-center">
       <div className="w-full max-w-screen-xl p-4 md:py-6">
         <div className="sm:flex sm:items-center sm:justify-between ">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center justify-start mb-4 sm:mb-0"
-          >
-            <img
-              src={triangleLogo}
-              className="h-[125px] w-auto"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white uppercase">
-              Design&Code
-            </span>
-          </a>
-
-          <ul className="flex flex-wrap gap-4 items-center justify-center mb-0 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a
-                href="https://www.facebook.com/groups/designandcodeucf"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-200 transition hover:text-gray-200/75"
-              >
-                <span className="sr-only">Facebook</span>
-                <svg
-                  className="h-7 w-7"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-            </li>
-
+           
+            <a href="/" className="flex items-center justify-start mb-4 sm:mb-0">
+                <img src={triangleLogo} className="h-[65px] w-auto" alt="Design&Code Logo" />
+                <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white uppercase">Design&Code</span>
+            </a>
+            
+            
+            <ul className="flex flex-wrap gap-4 items-center justify-center mb-0 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          
             <li>
               <a
                 href="https://www.instagram.com/designandcodeucf/"
