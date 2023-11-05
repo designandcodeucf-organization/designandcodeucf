@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import NavBar from '../../components/NavBar';
+import { Component } from 'react';
 import Footer from '../../components/Footer';
-import Heading from './Heading';
+import MemberHeading from './Heading';
 import SocialBoxes from './socialBoxes';
 import SocialHeading from './SocialHeading';
 import MemberChoices from './MemberChoices';
+import MembershipComparison from './MembershipComparison';
 
 
 export default class Members extends Component {
@@ -12,9 +12,9 @@ export default class Members extends Component {
     return (
       <>
       <main>
-
-      <Heading />
+      <MemberHeading />
       <MemberChoices />
+      <MembershipComparison />
       <SocialHeading />
       <SocialBoxes />
       </main>

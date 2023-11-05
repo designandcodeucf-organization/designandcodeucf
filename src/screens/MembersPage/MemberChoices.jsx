@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 export default class MemberChoices extends Component {
   render() {
     return (
-      <div className='flex flex-row items-center justify-center gap-[80px] text-white mt-[100px]'> 
+      <div className='flex flex-row items-center justify-center gap-[80px] text-white mt-[100px]  mb-[100px]'> 
         {/* free member choice */}
         <div className='flex flex-col items-center'>
         <div className='bg-[#1B1B1B] w-[300px] h-[385px] rounded-[15px]'>
-            <div className='bg-white w-auto h-[55px] flex items-center justify-center rounded-t-[15px]'>
+            <div className='bg-white w-auto h-[100px] flex items-center justify-center rounded-t-[15px]'>
                 <h3 className='text-black font-bold text-center text-[25px]'>
                     Free Member
                 </h3>
             </div>
-            <h2 className='font-bold text-center text-[40px] mt-[70px] mb-[90px] '>FREE</h2>
+            <h2 className='font-bold text-center text-[40px] mt-[70px] mb-[73px] '>FREE</h2>
             <p className=' font-medium text-[#777] text-[15px] pl-[10px]'>Lorem ipsum dolor sit amet consectetur. Nulla metus nunc venenatis nunc dis eget duis mauris. </p>
         </div>
 
@@ -25,12 +25,18 @@ export default class MemberChoices extends Component {
         {/* paid member choice */}
         <div className='flex flex-col items-center'>
         <div className='bg-[#1B1B1B] w-[300px] h-[385px] rounded-[15px]'>
-            <div className=' bg-[#FFCC37] w-auto h-[55px] flex items-center justify-center rounded-t-[15px]'>
+            <div className=' bg-[#FFCC37] w-auto h-[100px] flex items-center justify-center rounded-t-[15px]'>
+            <div className='w-auto h-[55px] flex items-center justify-center rounded-t-[15px]'>
                 <h3 className='text-black font-bold text-center text-[25px]'>
-                    Free Member
+                    Paid Member
                 </h3>
+            </div>   
             </div>
-            <h2 className='font-bold text-center text-[40px] mt-[70px] mb-[90px] '>FREE</h2>
+            <div className='text-white font-bold text-center text-[25px] mt-[35px] mb-[55px]'>
+                    <h2>$5 for 1 semester</h2>
+                    <h3>or</h3>
+                    <h2>$10 for 2 semesters</h2>
+                </div>
             <p className=' font-medium text-[#777] text-[15px] pl-[10px]'>Lorem ipsum dolor sit amet consectetur. Nulla metus nunc venenatis nunc dis eget duis mauris. </p>
         </div>
 
