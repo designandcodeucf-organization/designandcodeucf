@@ -1,29 +1,61 @@
 function About() {
   return (
     <>
-      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center h-min w-full ">
-        {/* hero inner */}
-        <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
-          {/* heading & cta */}
-          <div className="z-2 relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center h-min max-w-[600px] w-full">
-            <div className="relative flex flex-col flex-none flex-nowrap items-center justify-center gap-8 overflow-hidden h-min max-w-[600px] w-full">
-              <div className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full" id="AboutUs">
-                <h2 className="text-white text-center text-[4.2rem] text-5xl font-bold" >
-                  About us
+      <section className="my-[10rem] flex items-center justify-center w-full h-[min-content]">
+        <div className="gap-[1rem] flex s:flex-col max-w-[113.rem] h-[min-content] px-[3.2rem] ">
+          <div className="flex-col gap-[1rem] flex">
+            <div className="flex-col flex-nowrap flex flex-grow">
+              <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
+                <img
+                  className="w-[16rem] h-[16rem] rounded-xl"
+                  src="src/assets/javascript.png"
+                  alt="JavaScript"
+                ></img>
+                <h2 className="text-white text-[1.6rem] font-semibold pt-3">
+                  Learn about Javascript
                 </h2>
+                <p className="text-[#777777] text-md font-semibold">
+                  Learn about the fundamental concepts of JavaScript and it's
+                  libraries.
+                </p>
               </div>
-              <div className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full">
-                <p className="text-[#BBBBBB] text-[1.6rem] text-center font-medium">
-                  Design & Code is a UCF student club that specializes in web
-                  design and development. Created by a group of Digital Media:
-                  Web Design majors, we wanted to expand on our knowledge of the
-                  web outside of the classroom and apply it to real-world
-                  settings. We can only learn so much from semester-long
-                  courses, especially considering the number of coding
-                  languages, platforms, and extensions that exist on the World
-                  Wide Web. Bringing in a team of designers, developers, and
-                  everyone in between, Design & Code strives to help share
-                  information on creating a bright technological future.
+            </div>
+            <div className="flex-col flex-nowrap flex">
+              <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
+                <h2 className="text-white  text-[1.6rem] font-semibold">
+                  Attend live workshops
+                </h2>
+                <p className="text-[#777777] text-md font-semibold">
+                  Attend our hands-on workshops to sharpen your web design
+                  skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col s:flex-col-reverse gap-[1rem] flex-nowrap flex">
+            <div className="flex-col flex-nowrap flex h-full">
+              <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
+                <h2 className="text-white text-[1.6rem] font-semibold">
+                  Join speaker events
+                </h2>
+                <p className="text-[#777777] text-md font-semibold">
+                  Hear from professionals about their first-hand experience in
+                  the industry.
+                </p>
+              </div>
+            </div>
+            <div className="flex-col flex-nowrap flex flex-grow">
+              <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
+                <img
+                  className="w-[16rem] h-[16rem] rounded-xl"
+                  src="src/assets/figma-logo.png"
+                  alt="Figma Logo"
+                ></img>
+                <h2 className="text-white text-[1.6rem] font-semibold pt-3">
+                  Learn about UI/UX
+                </h2>
+                <p className="text-[#777777] text-md font-semibold">
+                  Sharpen your UI/UX skills with Figma or Adobe XD.
                 </p>
               </div>
             </div>
