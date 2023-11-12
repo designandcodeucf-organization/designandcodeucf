@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NavBar from "./components/NavBar.jsx";
-import Button from "./components/Button.jsx";
-import Modal from "./components/Modal.jsx";
+import NavBar from "../components/NavBar.jsx";
+import Button from "../components/Button.jsx";
+import Modal from "../components/Modal.jsx";
 
 
 const upcomingEvents = [
@@ -168,7 +168,6 @@ function Events() {
 
     return (
         <div className="App">
-            <NavBar />
             <main className="mt-[10rem] box-border m-0 p-0 px-40">
                 {/* Upcoming events */}
                 <section className="relative flex flex-col gap-8 flex-none flex-nowrap overflow-visible content-center items-center justify-center h-min w-full">

@@ -1,5 +1,6 @@
 import dcLogo from "../assets/DesignCodeTriLogo.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 function NavBar() {
 
   const [isActive, setIsActive] = useState(false)
@@ -25,32 +26,33 @@ function NavBar() {
             <button onClick={toggleStyles} className="flex ml-auto items-center px-3 py-2 border rounded text-white border-black hover:text-white hover:border-white"
             >
 
-              {isActive 
-              ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
-              : <svg
-                className="fill-current h-[1.6rem] w-[1.6]"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+              {isActive
+                ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                : <svg
+                  className="fill-current h-[1.6rem] w-[1.6]"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                  <title>Menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                 </svg>
               }
 
-              
+
 
             </button>
           </div>
-            <nav className={`${isActive ? "yo:opacity-1 yo:translate-x-0" : "yo:opacity-0 yo:translate-x-[100vw]"} yo:translate-x-0 fixed inset-0 z-40 h-full overflow-auto md:relative md:h-auto md:overflow-visible`}>
-              <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">                
-                <a onClick={toggleStyles} href="#top" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</a>
-                <a onClick={toggleStyles} href="#AboutUs" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> About Us</a>
-                <a href="mailto:designcodeatucf@gmail.com" target="_blank" rel="noreferrer"  className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"> Contact </a>
-                <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0">
-                  Become A Member
-                </a>
-              </ul>
-            </nav>
+          <nav className={`${isActive ? "yo:opacity-1 yo:translate-x-0" : "yo:opacity-0 yo:translate-x-[100vw]"} yo:translate-x-0 fixed inset-0 z-40 h-full overflow-auto md:relative md:h-auto md:overflow-visible`}>
+            <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">
+              <NavLink to="/" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Home</NavLink>
+              <NavLink to="/projects" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Projets</NavLink>
+              <NavLink to="/events" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Events</NavLink>
+              <NavLink to="/contact" className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">Contact</NavLink>
+              <a href="https://knightconnect.campuslabs.com/engage/organization/designandcode" className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0">
+                Become A Member
+              </a>
+            </ul>
+          </nav>
         </div>
       </header>
     </>
