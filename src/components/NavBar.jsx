@@ -61,9 +61,9 @@ function NavBar() {
 						} yo:translate-x-0 fixed inset-0 z-40 h-full overflow-auto md:relative md:h-auto md:overflow-visible`}>
 						<ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">
 							<NavLink
-								to="/"
+								to="/about"
 								className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4">
-								Home
+								About
 							</NavLink>
 							<NavLink
 								to="/projects"
