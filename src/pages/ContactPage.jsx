@@ -16,13 +16,13 @@ function Contact() {
       <div className="text-white flex flex-col items-center justify-center">
         <div className=" relative flex flex-col flex-none justify-center content-center h-[120px] max-w-[473px]">
           <h1 className=" flex flex-col text-center text-[50px] font-bold ">
-            Have Questions?
+            Contact
             <span className="text-[#FFCC37] text-center text-[50px] font-bold">
-              We're here to help{" "}
+              Design & Code{" "}
             </span>
           </h1>
         </div>
-        <div className="relative flex flex-col flex-none justify-center content-center h-[156px] max-w-[632px]">
+        <div className="relative flex flex-col flex-none justify-center content-center h-[156px] max-w-[632px] s:w-[398px]">
           <p className="text-center text-[15px] font-medium">
             If you have any questions or need assistance, please don't hesitate
             to reach out to us. We're here to provide you with the information
@@ -31,7 +31,7 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-2 w-[650px] m-auto gap-y-[10px] gap-x-[10px]">
+      <div className="grid grid-cols-2 w-[650px] s:w-[400px] m-auto gap-y-[10px] gap-x-[10px] s:grid s:grid-cols-1">
         {/* Instagram social box*/}
         <div className="bg-[#1B1B1B]  text-white rounded-[18px] text-[16px]  shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]">
           <a
@@ -118,7 +118,7 @@ function Contact() {
         </div>
 
         {/* KnightsConnect social box*/}
-        <div className="bg-[#1B1B1B]  text-white rounded-[18px] text-[16px]  shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]">
+        <div className="bg-[#1B1B1B]  text-white rounded-[18px] text-[16px] mb shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]">
           <a
             href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
             rel="noreferrer"
