@@ -3,13 +3,7 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 
 function Contact() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalEventData, setModalEventData] = useState({});
-
-  const handleEventClick = (eventData) => {
-    setModalEventData(eventData); // set the modal data
-    setModalOpen(true); // open the modal
-  };
+ 
 
   return (
     <div className="App">
@@ -118,7 +112,7 @@ function Contact() {
         </div>
 
         {/* KnightsConnect social box*/}
-        <div className="bg-[#1B1B1B]  text-white rounded-[18px] text-[16px] mb shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]">
+        <div className="bg-[#1B1B1B]  text-white rounded-[18px] s:h-[99px] m text-[16px] mb shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]">
           <a
             href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
             rel="noreferrer"
@@ -160,7 +154,7 @@ function Contact() {
               </svg>
               <span className="pt-[27.3px] font-semibold">KnightConnect</span>
             </div>
-            <p className="text-left mt-[10px] ml-[30px]">
+            <p className="text-left ml-[30px]">
               Lorem ipsum dolor sit amet consectetur.
             </p>
           </a>

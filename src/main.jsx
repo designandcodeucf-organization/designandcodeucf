@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Events from './pages/Events.jsx'
-import Contact from './pages/ContactPage.jsx';
+import Contact from './pages/Contact.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home.jsx'
 import Base from './pages/Base.jsx'
