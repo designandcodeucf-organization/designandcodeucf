@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar.jsx";
 import Button from "../components/Button.jsx";
 import Modal from "../components/Modal.jsx";
 
