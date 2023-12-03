@@ -6,7 +6,7 @@ function Footer() {
       <div className="w-full max-w-screen-xl p-4 md:py-6">
         <div className="sm:flex sm:items-center sm:justify-between ">
            
-            <a href="/" className="flex items-center justify-start mb-4 sm:mb-0">
+            <a href="/" className="flex items-center justify-start mb-4 s:ml-[71px]">
                 <img src={triangleLogo} className="h-[65px] w-auto" alt="Design&Code Logo" />
                 <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white uppercase">Design&Code</span>
             </a>
@@ -84,12 +84,15 @@ function Footer() {
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <div className="flex flex-col items-center justify-center">
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023{" "}
           <a href="/" className="hover:underline">
             Design&Code™
           </a>
-        </span>
+         </span>
+        </div>
+        
       </div>
     </footer>
   );

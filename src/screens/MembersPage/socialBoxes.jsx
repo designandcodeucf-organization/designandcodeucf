@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class SocialBoxes extends Component {
   render() {
     return (
-      <div className='grid grid-cols-2 w-[650px] m-auto gap-y-[10px] gap-x-[10px]'>
+      <div className='grid grid-cols-2 w-[650px] m-auto gap-y-[10px] gap-x-[10px] s:grid-cols-1 s:w-[352px] s:gap-y-[16px] s:gap-x-[16px] s:mt-[63px] s:mb-[150px]'>
         
         {/* Instagram social box*/}
         <div className='bg-[#1B1B1B]  text-white rounded-[18px] text-[16px]  shadow-inner hover:shadow-[#101010] hover:brightness-[0.7]'>
