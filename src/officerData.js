@@ -175,3 +175,30 @@ export const data = [
     ]
   },
 ];
+
+export const photo =[
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/firstOfficerMeeting.jpg',
+  },
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/firstGBMphoto.png',
+  },
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/htmlCSSWorkshopOne.jpg',
+  },
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/wireframeWorkshopTwo.jpg',
+  },
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/thumbsUpMatthew.jpg',
+  },
+  {
+    id: 0,
+    img: 'src/assets/clubEventPhotos/wireFramingWorkshopOne.jpg',
+  },
+]

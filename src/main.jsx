@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Events from './pages/Events.jsx'
 import Contact from './pages/Contact.jsx';
+import About from './pages/About.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home.jsx'
 import Base from './pages/Base.jsx'
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index element={<Home />} />
         <Route path="events" element={<Events />} />
         <Route path="contact" element={<Contact/>}/>
+        <Route path="about" element={<About/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

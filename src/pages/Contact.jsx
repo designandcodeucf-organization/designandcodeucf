@@ -49,7 +49,8 @@ function Contact() {
               <span className="pt-[27.3px] font-semibold">Instagram</span>
             </div>
             <p className="text-left mt-[10px] ml-[30px] mb-[14px]">
-              Lorem ipsum dolor sit amet consectetur.
+            Follow our Instagram to keep up with our activities
+.
             </p>
           </a>
         </div>
@@ -77,7 +78,8 @@ function Contact() {
               <span className="pt-[27.3px] font-semibold">Discord</span>
             </div>
             <p className="text-left mt-[10px] ml-[30px] mb-[14px]">
-              Lorem ipsum dolor sit amet consectetur.
+            Join our Discord to engage in our discussions.
+.
             </p>
           </a>
         </div>
@@ -106,7 +108,7 @@ function Contact() {
               <span className="pt-[27.3px] font-semibold">Email</span>
             </div>
             <p className="text-left mt-[10px] ml-[30px] mb-[14px]">
-              Lorem ipsum dolor sit amet consectetur.
+            If you want to make contributions or host a workshop for Design & Code.
             </p>
           </a>
         </div>
@@ -154,8 +156,8 @@ function Contact() {
               </svg>
               <span className="pt-[27.3px] font-semibold">KnightConnect</span>
             </div>
-            <p className="text-left ml-[30px]">
-              Lorem ipsum dolor sit amet consectetur.
+            <p className="text-left ml-[30px] mt-[10px] ml-[30px] mb-[14px]">
+              Join us on KnightConnect.
             </p>
           </a>
         </div>
