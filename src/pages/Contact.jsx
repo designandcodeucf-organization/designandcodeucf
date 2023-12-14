@@ -156,7 +156,7 @@ function Contact() {
               </svg>
               <span className="pt-[27.3px] font-semibold">KnightConnect</span>
             </div>
-            <p className="text-left ml-[30px] mt-[10px] ml-[30px] mb-[14px]">
+            <p className="text-left mt-[10px] ml-[30px] mb-[14px]">
               Join us on KnightConnect.
             </p>
           </a>

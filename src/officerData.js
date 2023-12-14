@@ -179,26 +179,42 @@ export const data = [
 export const photo =[
   {
     id: 0,
-    img: 'src/assets/clubEventPhotos/firstOfficerMeeting.jpg',
+    img: 'src/assets/clubEventPhotos/fallFinalMeeting.jpg',
+    alt: 'A photo of Design & Code officers at a officer meeting.',
   },
   {
-    id: 0,
+    id: 1,
     img: 'src/assets/clubEventPhotos/firstGBMphoto.png',
+    alt: 'Photo of Design & Code first Fall 2023 General Body meeting.',
   },
   {
-    id: 0,
+    id: 2,
+    img: 'src/assets/clubEventPhotos/khariAndKnightroResized.jpg',
+    alt: "A photo of Design & Code officer Khari and Knightro, UCF's mascot, together.",
+  },
+  {
+    id: 3,
     img: 'src/assets/clubEventPhotos/htmlCSSWorkshopOne.jpg',
+    alt: 'A photo of our members and officers engaging in our HTML and CSS workshop, Fall 2023.',
   },
   {
-    id: 0,
+    id: 4,
     img: 'src/assets/clubEventPhotos/wireframeWorkshopTwo.jpg',
+    alt: 'A photo of our members and officers engaging in our wireframing workshop, Fall 2023.',
   },
   {
-    id: 0,
+    id: 5,
+    img: 'src/assets/clubEventPhotos/fallSocialOne.jpg',
+    alt: 'A photo of our members and officers playing games at our Social Event, Fall 2023.',
+  },
+  {
+    id: 6,
     img: 'src/assets/clubEventPhotos/thumbsUpMatthew.jpg',
+    alt: 'A photo of Design & Code officer matthew smiling with his thumbs up at our Javacript Workshop, Fall 2023',
   },
   {
-    id: 0,
+    id: 7,
     img: 'src/assets/clubEventPhotos/wireFramingWorkshopOne.jpg',
+    alt: 'A photo of our members and officers engaging in our wireframing workshop, Fall 2023.',
   },
 ]
