@@ -37,7 +37,7 @@ function About() {
           </h1>
         </div>
         <div className="relative flex flex-col flex-none justify-center content-center h-[156px] md:w-[632px] xs:w-[398px]">
-          <p className="text-center md:text-[20px] xs:text-[13px] font-medium xs:p-[25px] md:p-[2px]">
+          <p className="text-center md:text-[20px] xs:text-[16px] font-medium xs:p-[25px] md:p-[2px]">
             Design & Code is a UCF student organization that specializes in web
             design and development.
           </p>
@@ -113,28 +113,28 @@ function About() {
           Photo Gallery
         </p>
       </div>
-      <div className="pb-[20px]">
+      <div className="pb-[20px] md:px-[100px] lg:px-[200px]">
         {/*IMG Gallery*/}
         <div className="relative flex items-center h-[500px]">
           <MdChevronLeft
-            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible sm:visible"
+            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
             onClick={slideLeft}
             size={40}
           />
           <div
             id="slider"
-            className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth y-scrollbar-hide xs:scrollbar-hide md:scrollbar-default"
+            className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth y-scrollbar-hide xs:scrollbar-hide sm:scrollbar-default md:scrollbar-default"
           >
             {photo.map((item) => (
               <img
-                className="w-[500px] rounded-[20px] inline-block p-[12px] cursor-pointer hover:scale-105 ease-in-out duration-300"
+                className="xs:w-[275px] md:w-[300px] lg:w-[500px] rounded-[20px] inline-block p-[12px] cursor-pointer hover:scale-105 ease-in-out duration-300"
                 src={item.img}
                 alt="/"
               />
             ))}
           </div>
           <MdChevronRight
-            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible sm:visible"
+            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
             onClick={slideRight}
             size={40}
           />
