@@ -29,7 +29,7 @@ const OfficerCard = ({ name, position, image, socials }) => (
           alt={item.name}
           className="xs:w-32 xs:h-32  md:w-48 md:h-48 rounded-full mb-4 object-cover"
         />
-        <p className="text-[18px] text-white text-lg font-semibold">
+        <p className="text-[18px] text-white font-semibold">
           {item.name}
         </p>
         <p className="text-md text-center mt-2 text-primaryLight">{item.position}</p>
