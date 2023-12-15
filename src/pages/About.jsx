@@ -259,6 +259,7 @@ function About() {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
