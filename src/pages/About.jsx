@@ -2,6 +2,7 @@ import { Component } from "react";
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 import { photo } from "../officerData.js";
+import { data } from "../officerData.js";
 import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
@@ -84,15 +85,15 @@ function About() {
               Our Mission
             </span>
             <svg
-              className="h-auto w-[35px] pt-[25px] mr-[11.7px] ml-[15px]"
+              className="h-auto w-[28px] pt-[25px] mr-[11.7px] ml-[15px]"
               width="24"
-              height="24"
+              height="25"
               viewBox="0 0 24 25"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M11 7.5H13V9.5H11V7.5ZM11 11.5H13V17.5H11V11.5ZM12 2.5C6.48 2.5 2 6.98 2 12.5C2 18.02 6.48 22.5 12 22.5C17.52 22.5 22 18.02 22 12.5C22 6.98 17.52 2.5 12 2.5ZM12 20.5C7.59 20.5 4 16.91 4 12.5C4 8.09 7.59 4.5 12 4.5C16.41 4.5 20 8.09 20 12.5C20 16.91 16.41 20.5 12 20.5Z"
+                d="M12 0.5C5.4 0.5 0 5.9 0 12.5C0 19.1 5.4 24.5 12 24.5C18.6 24.5 24 19.1 24 12.5C24 5.9 18.6 0.5 12 0.5ZM12 3.5C16.98 3.5 21 7.52 21 12.5C21 17.48 16.98 21.5 12 21.5C7.02 21.5 3 17.48 3 12.5C3 7.52 7.02 3.5 12 3.5ZM12 6.5C8.7 6.5 6 9.2 6 12.5C6 15.8 8.7 18.5 12 18.5C15.3 18.5 18 15.8 18 12.5C18 9.2 15.3 6.5 12 6.5ZM12 9.5C13.68 9.5 15 10.82 15 12.5C15 14.18 13.68 15.5 12 15.5C10.32 15.5 9 14.18 9 12.5C9 10.82 10.32 9.5 12 9.5Z"
                 fill="white"
               />
             </svg>
@@ -107,41 +108,42 @@ function About() {
           </p>
         </div>
       </div>
+
       <div className="pt-[70px]">
-      <div className="text-white flex flex-col items-center justify-center">
-        <p className="text-left font-bold text-[32px] pb-[10px]">
-          Photo Gallery
-        </p>
-      </div>
-      <div className="pb-[20px] md:px-[100px] lg:px-[200px]">
-        {/*IMG Gallery*/}
-        <div className="relative flex items-center">
-          <MdChevronLeft
-            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 lg:py-1 lg:px-1 md:rounded-full xs:invisible md:visible"
-            onClick={slideLeft}
-            size={40}
-          />
-          <div
-            id="slider"
-            className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth y-scrollbar-hide xs:scrollbar-hide"
-          >
-            {photo.map((item) => (
-              <img
-                className="xs:w-[275px] md:w-[350px] lg:w-[500px] rounded-[20px] inline-block p-[12px] cursor-pointer hover:scale-105 ease-in-out duration-300"
-                src={item.img}
-                alt={item.alt}
-              />
-            ))}
+        <div className="text-white flex flex-col items-center justify-center">
+          <p className="text-left font-bold text-[32px] pb-[10px]">
+            Photo Gallery
+          </p>
+        </div>
+        <div className="pb-[20px] md:px-[100px] lg:px-[200px]">
+          {/*IMG Gallery*/}
+          <div className="relative flex items-center">
+            <MdChevronLeft
+              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 lg:py-1 lg:px-1 md:rounded-full xs:invisible md:visible"
+              onClick={slideLeft}
+              size={40}
+            />
+            <div
+              id="slider"
+              className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth y-scrollbar-hide xs:scrollbar-hide"
+            >
+              {photo.map((item) => (
+                <img
+                  className="xs:w-[275px] md:w-[350px] lg:w-[500px] rounded-[20px] inline-block p-[12px] cursor-pointer hover:scale-105 ease-in-out duration-300"
+                  src={item.img}
+                  alt={item.alt}
+                />
+              ))}
+            </div>
+            <MdChevronRight
+              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
+              onClick={slideRight}
+              size={40}
+            />
           </div>
-          <MdChevronRight
-            className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
-            onClick={slideRight}
-            size={40}
-          />
         </div>
       </div>
-</div>
-      <div className="text-white flex flex-col items-center justify-center pt-32">
+      <div className="text-white flex flex-col items-center justify-center mb-[60px] pt-32">
         <p className="text-center font-bold text-[32px]">Get Involved</p>
         <div className="relative flex flex-col flex-none justify-center content-center h-[156px] md:w-[632px] xs:w-[398px] ">
           <p className="text-center md:text-[20px] xs:text-[14px] font-medium xs:p-[25px] md:p-[2px]">
@@ -247,6 +249,37 @@ function About() {
               </svg>
             </div>
           </a>
+        </div>
+      </div>
+
+      <div className="md:w-[750px] lg:w-[1000px] xs:w-[350px] m-auto xs:grid xs:grid-cols-1">
+        {/*Who We Are*/}
+        <div className="bg-[#1B1B1B] py-[10px] px-[25px] text-white rounded-[18px] text-[16px] ">
+          <div className=" flex flex-row items-center justify-center">
+            <span className="pt-[27.3px] ml-[30px] font-semibold text-[32px]">
+              Meet Our Officers
+            </span>
+            <svg
+              className="h-auto w-[52px] ml-[20px] mt-[20px]"
+              width="32"
+              height="16"
+              viewBox="0 0 32 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.33333 9.33333C6.8 9.33333 8 8.13333 8 6.66667C8 5.2 6.8 4 5.33333 4C3.86667 4 2.66667 5.2 2.66667 6.66667C2.66667 8.13333 3.86667 9.33333 5.33333 9.33333ZM6.84 10.8C6.34667 10.72 5.85333 10.6667 5.33333 10.6667C4.01333 10.6667 2.76 10.9467 1.62667 11.44C0.64 11.8667 0 12.8267 0 13.9067V16H6V13.8533C6 12.7467 6.30667 11.7067 6.84 10.8ZM26.6667 9.33333C28.1333 9.33333 29.3333 8.13333 29.3333 6.66667C29.3333 5.2 28.1333 4 26.6667 4C25.2 4 24 5.2 24 6.66667C24 8.13333 25.2 9.33333 26.6667 9.33333ZM32 13.9067C32 12.8267 31.36 11.8667 30.3733 11.44C29.24 10.9467 27.9867 10.6667 26.6667 10.6667C26.1467 10.6667 25.6533 10.72 25.16 10.8C25.6933 11.7067 26 12.7467 26 13.8533V16H32V13.9067ZM21.6533 10.2C20.0933 9.50667 18.1733 9 16 9C13.8267 9 11.9067 9.52 10.3467 10.2C8.90667 10.84 8 12.28 8 13.8533V16H24V13.8533C24 12.28 23.0933 10.84 21.6533 10.2ZM10.76 13.3333C10.88 13.0267 10.9333 12.8133 11.9733 12.4133C13.2667 11.9067 14.6267 11.6667 16 11.6667C17.3733 11.6667 18.7333 11.9067 20.0267 12.4133C21.0533 12.8133 21.1067 13.0267 21.24 13.3333H10.76ZM16 2.66667C16.7333 2.66667 17.3333 3.26667 17.3333 4C17.3333 4.73333 16.7333 5.33333 16 5.33333C15.2667 5.33333 14.6667 4.73333 14.6667 4C14.6667 3.26667 15.2667 2.66667 16 2.66667ZM16 0C13.7867 0 12 1.78667 12 4C12 6.21333 13.7867 8 16 8C18.2133 8 20 6.21333 20 4C20 1.78667 18.2133 0 16 0Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div className="md:grid-cols-3">
+            <div className="">
+                
+            </div>
+          </div>      
+        
+        
         </div>
       </div>
     </div>
