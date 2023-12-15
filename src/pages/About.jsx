@@ -146,11 +146,9 @@ function About() {
         </div>
       </div>
 
+     
       <div>
         <MeetOurOfficers />
-      </div>
-      <div>
-        {/*<OfficerModal />*/}
       </div>
 
       <div className="text-white flex flex-col items-center justify-center mb-[60px] pt-32">

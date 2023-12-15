@@ -15,7 +15,7 @@ export const data = [
     socials: 'Where to reach Polina:',
     LinkedIn: 'https://www.linkedin.com/in/polinashliakhina/',
     portfolio: '',
-    github: '',
+    github: 'https://github.com/codedbypolina',
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/polinashliakhina/' },
       { socialName: 'GitHub', link: 'https://github.com/codedbypolina' },
@@ -55,10 +55,10 @@ export const data = [
     socials: 'Where to reach Sydney:',
     LinkedIn: 'https://www.linkedin.com/in/sydney-sedloff/',
     portfolio: '',
-    github: '',
+    github: 'https://github.com/sydsedloff',
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/sydney-sedloff/' },
-      { socialName: 'GitHub', link: 'https://github.com/sydsedloff' },
+      { socialName: 'GitHub', link: '' },
       { socialName: 'Email', link: 'mailto:ssedloff@knights.ucf.edu' }
       // Add more social icons here
     ]
@@ -115,10 +115,10 @@ export const data = [
     socials: 'Where to reach Jolina:',
     LinkedIn: 'https://www.linkedin.com/in/jolina-jassal-15ba681b4',
     portfolio: '',
-    github: '',
+    github: 'https://github.com/jolijass',
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/jolina-jassal-15ba681b4' },
-      { socialName: 'GitHub', link: 'https://github.com/jolijass' },
+      { socialName: 'GitHub', link: '' },
       { socialName: 'Email', link: 'mailto: jo625763@ucf.edu ' }
       // Add more social icons here
     ]
@@ -135,10 +135,10 @@ export const data = [
     socials: 'Where to reach Casi:',
     LinkedIn: 'https://www.linkedin.com/in/casandra-alvarez/',
     portfolio: '',
-    github: '',
+    github: 'https://github.com/ca764763',
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/casandra-alvarez/' },
-      { socialName: 'GitHub', link: 'https://github.com/ca764763' },
+      { socialName: 'GitHub', link: '' },
       { socialName: 'Email', link: 'mailto:ca764763@ucf.edu' }
       // Add more social icons here
     ]
