@@ -17,17 +17,17 @@ const officersData = [
 
 const OfficerCard = ({ name, position, image, socials }) => (
   <>
-  <div className="text-white xs:text-[32px] flex flex-col text-center text-[48px] font-bold bg-[#1B1B1B] p-8 rounded-t-lg">
+  <div className="text-white xs:text-[32px] flex flex-col text-center md:text-[36px] font-bold bg-[#1B1B1B] p-8 rounded-t-lg">
       <p>Meet Our Officers</p>
     </div>
-  <div className="flex-col md:grid md:grid-cols-3 gap-x-1 gap-y-4 items-center mb-8 bg-[#1B1B1B] rounded-b-lg">
+  <div className="flex-col md:grid md:grid-cols-3 gap-x-1 gap-y-4 items-center pt-8 pb-8 mb-8 bg-[#1B1B1B] rounded-b-lg">
 
     {data.map((item) => (
       <div key={item.id} className="flex flex-col items-center mt-8 mb-8">
         <img
           src={item.img}
           alt={item.name}
-          className="w-32 h-32 rounded-full mb-4 object-cover"
+          className="xs:w-32 xs:h-32  md:w-48 md:h-48 rounded-full mb-4 object-cover"
         />
         <p className="text-[18px] text-white text-lg font-semibold">
           {item.name}
