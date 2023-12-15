@@ -75,7 +75,7 @@ export const data = [
     socials: 'Where to reach Lindsey:',
     LinkedIn: 'https://www.linkedin.com/in/lindsey-nielsen-97217b206/',
     portfolio: '',
-    github: '',
+    github: 'https://github.com/lindsey-nielsen',
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/lindsey-nielsen-97217b206/' },
       { socialName: 'GitHub', link: 'https://github.com/lindsey-nielsen' },

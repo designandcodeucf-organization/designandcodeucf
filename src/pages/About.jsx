@@ -7,6 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import MeetOurOfficers from "../components/MeetOurOfficers.jsx";
 
+
 function About() {
   const slideSize = 500;
   const slideLeft = () => {
@@ -118,15 +119,15 @@ function About() {
         </div>
         <div className="pb-[20px] md:px-[100px] lg:px-[200px]">
           {/*IMG Gallery*/}
-          <div className="relative flex items-center">
+          <div className="relative flex items-center w-full">
             <MdChevronLeft
-              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 lg:py-1 lg:px-1 md:rounded-full xs:invisible md:visible"
+              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 md:mr-8 md:ml-8 lg:py-1 lg:px-1 md:rounded-full xs:invisible md:visible"
               onClick={slideLeft}
               size={40}
             />
             <div
               id="slider"
-              className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth y-scrollbar-hide xs:scrollbar-hide"
+              className=" xs:w-full md:w-full h-full overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide"
             >
               {photo.map((item) => (
                 <img
@@ -137,13 +138,21 @@ function About() {
               ))}
             </div>
             <MdChevronRight
-              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 sm:mr-8 sm:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
+              className="opacity-80 cursor-pointer hover:opacity-100 bg-primaryLightBlue rounded-full px-1 py-1 md:mr-8 md:ml-8 md:py-1 md:px-1 md:rounded-full xs:invisible md:visible"
               onClick={slideRight}
               size={40}
             />
           </div>
         </div>
       </div>
+
+      <div>
+        <MeetOurOfficers />
+      </div>
+      <div>
+        {/*<OfficerModal />*/}
+      </div>
+
       <div className="text-white flex flex-col items-center justify-center mb-[60px] pt-32">
         <p className="text-center font-bold text-[32px]">Get Involved</p>
         <div className="relative flex flex-col flex-none justify-center content-center h-[156px] md:w-[632px] xs:w-[398px] ">
@@ -252,20 +261,8 @@ function About() {
           </a>
         </div>
       </div>
-
-      
-      
-    <div>
-      <MeetOurOfficers />
-    </div>
-
-
-
-
     </div>
   );
 }
 
 export default About;
-
-
