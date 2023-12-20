@@ -1,5 +1,6 @@
 import dcLogo from "../assets/DesignCodeTriLogo.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
   const toggleStyles = () => {
@@ -14,11 +15,16 @@ function NavBar() {
       >
         <div className="max-w-[120.6rem] w-full flex justify-between">
           <div className="flex-row lg:flex lg:items-center lg:w-auto space-between">
-            <img
-              src={dcLogo}
-              alt="Logo"
-              className="h-12 w-auto lg:h-12 lg:w-auto mr-4"
-            />
+            <NavLink
+              to="/"
+              className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
+            >
+              <img
+                src={dcLogo}
+                alt="Logo"
+                className="h-12 w-auto lg:h-12 lg:w-auto mr-4"
+              />
+            </NavLink>
           </div>
           <div className="z-50 flex md:hidden">
             <button
@@ -60,30 +66,30 @@ function NavBar() {
             } yo:translate-x-0 fixed inset-0 z-40 h-full overflow-auto md:relative md:h-auto md:overflow-visible`}
           >
             <ul className="bg-black md:bg-transparent flex font-bold flex-col justify-center items-center h-full w-full  gap-5 md:flex-row md:justify-start  lg:flex-row">
-              <a
-                onClick={toggleStyles}
-                href="#top"
+              <NavLink
+                to="/about"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
               >
-                Home
-              </a>
-              <a
-                onClick={toggleStyles}
-                href="#AboutUs"
+                About
+              </NavLink>
+              <NavLink
+                to="/projects"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
               >
-                {" "}
-                About Us
-              </a>
-              <a
-                href="mailto:designcodeatucf@gmail.com"
-                target="_blank"
-                rel="noreferrer"
+                Projects
+              </NavLink>
+              <NavLink
+                to="/events"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
               >
-                {" "}
-                Contact{" "}
-              </a>
+                Events
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
+              >
+                Contact
+              </NavLink>
               <a
                 href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
                 className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0"
