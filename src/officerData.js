@@ -21,6 +21,27 @@ export const data = [
     ],
   },
   {
+    id: 2,
+    img: "src/assets/officerHeadshots/Mya1600x1600.jpg",
+    name: " Mya Mosely",
+    position: "Vice President",
+    readMore: "Click to learn more",
+    major: "Major: Digital Media - Web Design",
+    minor: "Minor: Computer Science",
+    description:
+      "Mya is one of the event coordinators, dedicated to planning and securing spaces for events. Raised in Jacksonville, her determination and ambition show through her work in event organization and coding. She is minoring in Computer Science, and some of her favorite books are “Parable of the Sower,” and “Dune.”",
+    socials: "Where to reach Mya:",
+    icons: [
+      {
+        socialName: "LinkedIn",
+        link: "https://www.linkedin.com/in/mya-a-mosely/",
+      },
+      { socialName: "GitHub", link: "https://github.com/mmya2300" },
+      { socialName: "Email", link: "mailto:moselymya230300@ucf.edu" },
+      // Add more social icons here
+    ],
+  },
+  {
     id: 3,
     img: "src/assets/officerHeadshots/Sydney1600x1600.jpg",
     name: "Sydney Sedloff",
@@ -125,30 +146,9 @@ export const data = [
       // Add more social icons here
     ],
   },
-  {
-    id: 8,
-    img: "src/assets/officerHeadshots/Mya1600x1600.jpg",
-    name: " Mya Mosely",
-    position: "Event Coordinator",
-    readMore: "Click to learn more",
-    major: "Major: Digital Media - Web Design",
-    minor: "Minor: Computer Science",
-    description:
-      "Mya is one of the event coordinators, dedicated to planning and securing spaces for events. Raised in Jacksonville, her determination and ambition show through her work in event organization and coding. She is minoring in Computer Science, and some of her favorite books are “Parable of the Sower,” and “Dune.”",
-    socials: "Where to reach Mya:",
-    icons: [
-      {
-        socialName: "LinkedIn",
-        link: "https://www.linkedin.com/in/mya-a-mosely/",
-      },
-      { socialName: "GitHub", link: "https://github.com/mmya2300" },
-      { socialName: "Email", link: "mailto:moselymya230300@ucf.edu" },
-      // Add more social icons here
-    ],
-  },
 
   {
-    id: 9,
+    id: 8,
     img: "src/assets/officerHeadshots/matthew1600x1600.jpg",
     name: "Matthew Sand",
     position: "Event Coordinator",
@@ -169,7 +169,7 @@ export const data = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     img: "src/assets/officerHeadshots/Andres1600x1600.jpg",
     name: "Andres Rodriguez",
     position: "Community Builder",
