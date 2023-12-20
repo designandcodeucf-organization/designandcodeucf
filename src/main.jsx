@@ -9,14 +9,14 @@ import PageNotFound from "./pages/PageNotFound.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<BrowserRouter>
-		<Routes>
-			<Route path="/" element={<Base />}>
-				<Route index element={<Home />} />
-				<Route path="events" element={<Events />} />
-				<Route path="projects" element={<Projects />} />
-				<Route path="*" element={<PageNotFound />} />
-			</Route>
-		</Routes>
-	</BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Base />}>
+        <Route index element={<Home />} />
+        <Route path="events" element={<Events />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
