@@ -237,7 +237,7 @@ class Members extends Component {
                             <div className=' relative flex flex-col flex-none justify-center content-center h-[120px] max-w-[473px]'>
                             <h1 className=' flex flex-col text-center text-[50px] font-bold s:text-[30px]'>
                             Have Questions?
-                            <span className= 'text-[#FFCC37] text-center text-[50px] font-bold s:text-[30px]'>We're here to help </span>
+                            <span className= 'text-[#FFCC37] text-center text-[50px] font-bold s:text-[30px]'>We&#39;re here to help </span>
                             </h1>
                             </div>  
                             <div  className='relative flex flex-col flex-none justify-center content-center h-[156px] max-w-[632px] s:h-[126px] s:w-[358px] '>
