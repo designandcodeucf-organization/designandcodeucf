@@ -19,7 +19,7 @@ export const data = [
     icons: [
       { socialName: 'LinkedIn', link: 'https://www.linkedin.com/in/polinashliakhina/' },
       { socialName: 'GitHub', link: 'https://github.com/codedbypolina' },
-      { socialName: 'Email', link: 'mailto:ps.polina@knights.ucf.edu ' }
+      { socialName: 'Email', link: 'mailto:po171501@ucf.edu ' }
       // Add more social icons here
     ]
   },

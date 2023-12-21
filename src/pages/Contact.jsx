@@ -79,7 +79,7 @@ function Contact() {
             </div>
             <p className="text-left mt-[10px] ml-[30px] mb-[14px]">
             Join our Discord to engage in our discussions.
-.
+
             </p>
           </a>
         </div>
@@ -213,6 +213,7 @@ function Contact() {
           ></img>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

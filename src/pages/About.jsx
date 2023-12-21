@@ -126,7 +126,7 @@ function About() {
               size={40}
             />
             <div
-              id="slider"
+              
               className=" xs:w-full md:w-full h-full overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide"
             >
               {photo.map((item) => (
