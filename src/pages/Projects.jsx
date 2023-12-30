@@ -1,6 +1,45 @@
 import React, { useState } from "react";
 import Button from "../components/Button.jsx";
 import Modal from "../components/Modal.jsx";
+import ModalPreviewBox from "../components/ModalPreviewBox.jsx";
+
+const ongoingProjects = [
+	{
+		name: "Project Management System",
+		description:
+			"The Design & Code club is building its own project management software as a free solution to running ongoing projects for our members. This is a full stack project that will feature completion statuses, a details section for each task, login/credentials for users, and be displayed in Kanban board format.",
+		previewImage: "src/assets/randomProject.png",
+		contributorsPreview:
+			"Sydney Sedloff, Khari DuBard, Danya Baron, Matthew Sand, Mya Mosely, Alyson Franco",
+		images: ["src/assets/randomProject.png"],
+		contributors: [
+			{
+				name: "Sydney Sedloff",
+				role: "Project Manager",
+			},
+			{
+				name: "Khari DuBard",
+				role: "Lead Designer",
+			},
+			{
+				name: "Danya Baron",
+				role: "Designer",
+			},
+			{
+				name: "Matthew Sand",
+				role: "Lead Developer",
+			},
+			{
+				name: "Mya Mosely",
+				role: "Developer",
+			},
+			{
+				name: "Alyson Franco",
+				role: "Developer",
+			},
+		],
+	},
+];
 
 const projects = [
 	{
@@ -11,7 +50,7 @@ const projects = [
 			"src/assets/randomProject.png",
 			"src/assets/randomProject.png",
 		],
-		authors: [
+		contributors: [
 			{
 				name: "A person",
 				role: "A Role",
@@ -45,7 +84,7 @@ const projects = [
 	{
 		name: "Project 2",
 		previewImage: "src/assets/randomProject.png",
-		authors: [
+		contributors: [
 			{
 				name: "A person",
 				role: "A Role",
@@ -65,7 +104,7 @@ const projects = [
 	{
 		name: "Project 3",
 		previewImage: "src/assets/randomProject.png",
-		authors: [
+		contributors: [
 			{
 				name: "A person",
 				role: "A Role",
@@ -88,8 +127,9 @@ function Projects() {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [modalProjectData, setModalProjectData] = useState({});
 
-	const handleProjectClick = (eventData) => {
-		setModalProjectData(eventData); // set the modal data
+	const handleProjectClick = (projectData) => {
+		setModalProjectData(projectData); // set the modal data
+		console.log(projectData);
 		setModalOpen(true); // open the modal
 	};
 
@@ -121,7 +161,18 @@ function Projects() {
 				</a>
 			</div>
 			<div className="mt-[10rem] mb-[20rem]">
-				<h2 className="text-white text-left text-[4.2rem] text-5xl font-bold w-full mb-[5rem]">
+				<h2 className="text-white text-left text-[4.2rem] text-5xl font-bold w-full mb-[1.5rem]">
+					Ongoing Projects
+				</h2>
+				<div className="flex flex-wrap gap-8 justify-evenly">
+					{ongoingProjects.map((project) => (
+						<ModalPreviewBox
+							previewData={project}
+							handleOpenModal={handleProjectClick}
+						/>
+					))}
+				</div>
+				<h2 className="text-white text-left text-[4.2rem] text-5xl font-bold w-full mb-[5rem] mt-[1.5rem]">
 					Projects
 				</h2>
 				<div className="flex flex-wrap gap-8 justify-evenly">
@@ -142,15 +193,19 @@ function Projects() {
 					<h1 className="font-bold text-[2em] text-left w-full">
 						{modalProjectData.name}
 					</h1>
-					<ImageGallery modalProjectData={modalProjectData} />
+					{modalProjectData.images && (
+						<ImageGallery modalProjectData={modalProjectData} />
+					)}
 					<h3 className="text-[1.25em] w-full text-left mt-[2em]">
 						<div className="font-bold text-[1.5em]">Description:</div>
 						{modalProjectData.description}
 					</h3>
 					<h3 className="text-[1.25em] mb-[2em] w-full text-left">
-						<div className="font-bold text-[1.5em] mt-[2rem]">Authors:</div>
-						{modalProjectData.authors
-							? modalProjectData.authors.map((author) => (
+						<div className="font-bold text-[1.5em] mt-[2rem]">
+							Contributors:
+						</div>
+						{modalProjectData.contributors
+							? modalProjectData.contributors.map((author) => (
 									<div>
 										<span className="font-bold">{author.role}: </span>
 										{author.name}
