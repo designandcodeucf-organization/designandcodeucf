@@ -113,7 +113,7 @@ export const data = [
     major: "Major: Digital Media - Web Design",
     minor: "",
     description:
-      "Jolina is another one of the marketing coordinators, establishing looks and aesthetics for the club. An Orlando resident, she has been into art and media for most of her life, such as reading, writing, singing, and more. She writes for the HerCampus at UCF chapter and loves chocolate.",
+      "Jolina is another one of the marketing coordinators, establishing looks and aesthetics for the club! An Orlando resident, she has been into art and media for most of her life, such as reading, writing, singing, and more. She writes for the HerCampus at UCF chapter and loves chocolate.",
     socials: "Where to reach Jolina:",
     icons: [
       {
