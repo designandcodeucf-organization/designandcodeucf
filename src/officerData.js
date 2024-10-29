@@ -3,7 +3,7 @@
 export const data = [
 	{
 		id: 1,
-		img: "src/assets/officerHeadshots/meera.jpg",
+		img: "/assets/officerHeadshots/meera.jpg",
 		name: "Meera Bhola",
 		position: "President",
 		readMore: "Click to learn more",
@@ -24,7 +24,7 @@ export const data = [
 	},
 	{
 		id: 2,
-		img: "src/assets/officerHeadshots/Valeria.jpg",
+		img: "/assets/officerHeadshots/Valeria.jpg",
 		name: "Valeria Tibocha",
 		position: "Vice President",
 		readMore: "Click to learn more",
@@ -45,7 +45,7 @@ export const data = [
 	},
 	{
 		id: 3,
-		img: "src/assets/officerHeadshots/alyson.jpeg",
+		img: "/assets/officerHeadshots/alyson.jpeg",
 		name: "Alyson Franco",
 		position: "Treasurer",
 		readMore: "Click to learn more",
@@ -66,7 +66,7 @@ export const data = [
 	},
 	{
 		id: 5,
-		img: "src/assets/officerHeadshots/Hadassah.jpeg",
+		img: "/assets/officerHeadshots/Hadassah.jpeg",
 		name: "Hadassah Roberts",
 		position: "Marketing Coordinator",
 		readMore: "Click to learn more",
@@ -87,7 +87,7 @@ export const data = [
 	},
 	{
 		id: 8,
-		img: "src/assets/officerHeadshots/Dynie.jpg",
+		img: "/assets/officerHeadshots/Dynie.jpg",
 		name: "Dynie Mesoneuvre",
 		position: "Event Coordinator",
 		readMore: "Click to learn more",
@@ -108,7 +108,7 @@ export const data = [
 	},
 	{
 		id: 9,
-		img: "src/assets/officerHeadshots/anna.jpg",
+		img: "/assets/officerHeadshots/anna.jpg",
 		name: "Anna Russell",
 		position: "Community Builder",
 		readMore: "Click to learn more",
