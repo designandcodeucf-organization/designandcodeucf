@@ -1,9 +1,9 @@
 /** @format */
 
 import MeeraImage from "./assets/officerHeadshots/meera.jpg";
-import ValeriaImage from "./assets/officerHeadshots/Valeria.jpg";
+import ValeriaImage from "./assets/officerHeadshots/valeria.jpg";
 import AlysonImage from "./assets/officerHeadshots/alyson.jpeg";
-import HadassahImage from "./assets/officerHeadshots/Hadassah.jpeg";
+import HadassahImage from "./assets/officerHeadshots/hadassah.jpeg";
 import DynieImage from "./assets/officerHeadshots/Dynie.jpg";
 import AnnaImage from "./assets/officerHeadshots/anna.jpg";
 
