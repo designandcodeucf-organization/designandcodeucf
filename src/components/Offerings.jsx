@@ -1,7 +1,7 @@
 /** @format */
 
-import JavaScriptImage from "/src/assets/javascript.png";
-import FigmaLogo from "/src/assets/figma-logo.png";
+import JavaScriptImage from "../assets/javascript.png";
+import FigmaLogo from "../assets/figma-logo.png";
 
 
 function Offerings() {

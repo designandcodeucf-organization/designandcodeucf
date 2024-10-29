@@ -1,11 +1,11 @@
 /** @format */
 
-import MeeraImage from "/src/assets/officerHeadshots/meera.jpg";
-import ValeriaImage from "/src/assets/officerHeadshots/Valeria.jpg";
-import AlysonImage from "/src/assets/officerHeadshots/alyson.jpeg";
-import HadassahImage from "/src/assets/officerHeadshots/Hadassah.jpeg";
-import DynieImage from "/src/assets/officerHeadshots/Dynie.jpg";
-import AnnaImage from "/src/assets/officerHeadshots/anna.jpg";
+import MeeraImage from "./assets/officerHeadshots/meera.jpg";
+import ValeriaImage from "./assets/officerHeadshots/Valeria.jpg";
+import AlysonImage from "./assets/officerHeadshots/alyson.jpeg";
+import HadassahImage from "./assets/officerHeadshots/Hadassah.jpeg";
+import DynieImage from "./assets/officerHeadshots/Dynie.jpg";
+import AnnaImage from "./assets/officerHeadshots/anna.jpg";
 
 export const data = [
 	{
