@@ -1,9 +1,16 @@
 /** @format */
 
+import MeeraImage from "/src/assets/officerHeadshots/meera.jpg";
+import ValeriaImage from "/src/assets/officerHeadshots/Valeria.jpg";
+import AlysonImage from "/src/assets/officerHeadshots/alyson.jpeg";
+import HadassahImage from "/src/assets/officerHeadshots/Hadassah.jpeg";
+import DynieImage from "/src/assets/officerHeadshots/Dynie.jpg";
+import AnnaImage from "/src/assets/officerHeadshots/anna.jpg";
+
 export const data = [
 	{
 		id: 1,
-		img: "/assets/officerHeadshots/meera.jpg",
+		img: MeeraImage,
 		name: "Meera Bhola",
 		position: "President",
 		readMore: "Click to learn more",
@@ -19,19 +26,18 @@ export const data = [
 			},
 			{ socialName: "GitHub", link: "https://github.com/meera-develops" },
 			{ socialName: "Email", link: " " },
-			// Add more social icons here
 		],
 	},
 	{
 		id: 2,
-		img: "/assets/officerHeadshots/Valeria.jpg",
+		img: ValeriaImage,
 		name: "Valeria Tibocha",
 		position: "Vice President",
 		readMore: "Click to learn more",
 		major: "Major: Digital Media - Web Design",
 		minor: "Minor: Marketing",
 		description:
-			"Valeria was raised in Weston, FL and plan to combine her passion for design and marketing in the future. Her favorite games at the moment are Valorant and Lethal Company.”",
+			"Valeria was raised in Weston, FL and plans to combine her passion for design and marketing in the future. Her favorite games at the moment are Valorant and Lethal Company.",
 		socials: "Where to reach Valeria:",
 		icons: [
 			{
@@ -40,19 +46,18 @@ export const data = [
 			},
 			{ socialName: "GitHub", link: "" },
 			{ socialName: "Email", link: "mailto:valeriaftibocha@gmail.com" },
-			// Add more social icons here
 		],
 	},
 	{
 		id: 3,
-		img: "/assets/officerHeadshots/alyson.jpeg",
+		img: AlysonImage,
 		name: "Alyson Franco",
 		position: "Treasurer",
 		readMore: "Click to learn more",
 		major: "Major: Information Technology",
 		minor: "",
 		description:
-			"Alyson's hometown is Cape Coral, FL. She enjoys crocheting and playing horizon zero dawn games. She joined the club to explore more web development opportunities outside of the class.",
+			"Alyson's hometown is Cape Coral, FL. She enjoys crocheting and playing Horizon Zero Dawn games. She joined the club to explore more web development opportunities outside of the class.",
 		socials: "Where to reach Alyson:",
 		icons: [
 			{
@@ -61,33 +66,28 @@ export const data = [
 			},
 			{ socialName: "GitHub", link: "https://github.com/alysonfranco" },
 			{ socialName: "Email", link: "mailto:sy884425@ucf.edu" },
-			// Add more social icons here
 		],
 	},
 	{
 		id: 5,
-		img: "/assets/officerHeadshots/Hadassah.jpeg",
+		img: HadassahImage,
 		name: "Hadassah Roberts",
 		position: "Marketing Coordinator",
 		readMore: "Click to learn more",
 		major: "Major: Digital Media - Web Design",
 		minor: "Computer Science",
 		description:
-			"Hadassah enjoys reading Silas Marner and “Frankenstein. She love the band MGMT and enjoys playing any of the Portal games and COD Zombies.",
+			"Hadassah enjoys reading Silas Marner and Frankenstein. She loves the band MGMT and enjoys playing any of the Portal games and COD Zombies.",
 		socials: "Where to reach Hadassah:",
 		icons: [
-			{
-				socialName: "LinkedIn",
-				link: "",
-			},
+			{ socialName: "LinkedIn", link: "" },
 			{ socialName: "GitHub", link: "https://github.com/HadsRobs19" },
 			{ socialName: "Email", link: "mailto:hadassahplaysflute@gmail.com" },
-			// Add more social icons here
 		],
 	},
 	{
 		id: 8,
-		img: "/assets/officerHeadshots/Dynie.jpg",
+		img: DynieImage,
 		name: "Dynie Mesoneuvre",
 		position: "Event Coordinator",
 		readMore: "Click to learn more",
@@ -103,28 +103,23 @@ export const data = [
 			},
 			{ socialName: "GitHub", link: "" },
 			{ socialName: "Email", link: "mailto:dy918700@ucf.edu" },
-			// Add more social icons here
 		],
 	},
 	{
 		id: 9,
-		img: "/assets/officerHeadshots/anna.jpg",
+		img: AnnaImage,
 		name: "Anna Russell",
 		position: "Community Builder",
 		readMore: "Click to learn more",
 		major: "Major: Computer Science",
 		minor: "",
 		description:
-			"Anna has a passion for learning new things and coding. She cares very deeply for her friends and family. On her free time she likes to read, draw, and play video games.",
+			"Anna has a passion for learning new things and coding. She cares very deeply for her friends and family. In her free time, she likes to read, draw, and play video games.",
 		socials: "Where to reach Anna:",
 		icons: [
-			{
-				socialName: "LinkedIn",
-				link: "",
-			},
+			{ socialName: "LinkedIn", link: "" },
 			{ socialName: "GitHub", link: "" },
 			{ socialName: "Email", link: "" },
-			// Add more social icons here
 		],
 	},
 ];
