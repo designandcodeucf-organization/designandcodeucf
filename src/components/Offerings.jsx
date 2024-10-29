@@ -12,7 +12,7 @@ function Offerings() {
                   alt="JavaScript"
                 ></img>
                 <h2 className="text-white text-[1.6rem] font-semibold pt-3">
-                  Learn about Javascript
+                  Learn about Javascript.
                 </h2>
                 <p className="text-[#777777] text-md font-semibold">
                   Learn about the fundamental concepts of JavaScript and it's
