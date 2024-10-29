@@ -8,7 +8,7 @@ function Offerings() {
               <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
                 <img
                   className="w-[16rem] h-[16rem] rounded-xl"
-                  src="src/assets/javascript.png"
+                  src="/assets/javascript.png"
                   alt="JavaScript"
                 ></img>
                 <h2 className="text-white text-[1.6rem] font-semibold pt-3">
@@ -48,7 +48,7 @@ function Offerings() {
               <div className="bg-[#1B1B1B] p-[3.2rem] h-full rounded-xl flex-col flex gap-2">
                 <img
                   className="w-[16rem] h-[16rem] rounded-xl"
-                  src="src/assets/figma-logo.png"
+                  src="/assets/figma-logo.png"
                   alt="Figma Logo"
                 ></img>
                 <h2 className="text-white text-[1.6rem] font-semibold pt-3">
