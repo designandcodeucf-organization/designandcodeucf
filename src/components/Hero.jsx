@@ -27,7 +27,8 @@ function Hero() {
 
             {/* <div className="flex items-center justify-center gap-10 h-min-content overflow-hidden relative w-min-content"> */}
             <a
-              href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
+              // href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
+              href="https://discord.gg/AvhnHqNP6h"
               target="_blank"
               rel="noreferrer"
             >
