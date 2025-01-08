@@ -1,14 +1,22 @@
-function About() {
+import { forwardRef } from "react";
+
+const About = forwardRef((props, ref) => {
   return (
     <>
-      <section className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center h-min w-full ">
+      <section
+        ref={ref}
+        className="relative flex flex-col flex-none flex-nowrap overflow-visible content-center items-center justify-center h-min w-full "
+      >
         {/* hero inner */}
         <div className="relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center py-0 px-8 h-min max-w-[1240px] w-full">
           {/* heading & cta */}
           <div className="z-2 relative flex flex-col flex-none flex-nowrap content-center overflow-visible items-center justify-center h-min max-w-[600px] w-full">
             <div className="relative flex flex-col flex-none flex-nowrap items-center justify-center gap-8 overflow-hidden h-min max-w-[600px] w-full">
-              <div className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full" id="AboutUs">
-                <h2 className="text-white text-center text-[4.2rem] text-5xl font-bold" >
+              <div
+                className="relative flex flex-col flex-none shrink-0	break-words whitespace-pre-wrap justify-start h-auto w-full"
+                id="AboutUs"
+              >
+                <h2 className="text-white text-center text-[4.2rem] text-5xl font-bold">
                   About us
                 </h2>
               </div>
@@ -32,6 +40,6 @@ function About() {
       </section>
     </>
   );
-}
+});
 
 export default About;

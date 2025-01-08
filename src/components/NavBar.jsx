@@ -87,6 +87,11 @@ function NavBar() {
               <NavLink
                 to="/contact"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
+                // temporarily redirect to mailto:
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "mailto:designcodeatucf@gmail.com";
+                }}
               >
                 Contact
               </NavLink>
