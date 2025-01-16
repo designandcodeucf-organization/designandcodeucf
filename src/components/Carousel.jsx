@@ -120,50 +120,51 @@ function OfficerCarousel() {
           className="pop-up-background fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75"
           onClick={closePopup}
         >
-          <div className="pop-up-box xs:w-[40rem] xs:h-[62.5rem] sm:w-[50rem] sm:h-[62.5rem] md:w-[55rem] md:h-[62.5rem] lg:w-[70rem] lg:h-[62.5rem] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg">
-            <img
-              src={selectedMember.img}
-              alt={selectedMember.name}
-              className="w-[20rem] h-[20rem] xs:w-[12.5rem] xs:h-[12.5rem] sm:w-[12.5rem] sm:h-[12.5rem] md:w-[15rem] md:h-[15rem] object-cover rounded-full mx-auto mb-4"
-            />
-            <h2 className="text-white xs:text-[1.6rem] sm:text-[2.2rem] font-bold text-center">
-              {selectedMember.name}
-            </h2>
-            <p className="text-white font-semibold xs:text-[1.4rem] lg:text-xl text-center py-2 sm:text-[1.4rem]">
-              {selectedMember.position}
-            </p>
-            <p className="text-white font-semibold text-center xs:text-[1.4rem] sm:text-[1.4rem]">
-              {selectedMember.major}
-            </p>
-            <p className="text-white font-semibold text-center sm:text-[1.4rem]">
-              {selectedMember.minor}
-            </p>
-            <p className="text-white px-24 py-4 text-center xs:text-[1.4rem] xs:px-2 sm:text-[1.6rem] lg:text-[1.8rem] lg:px-16 ">
-              {selectedMember.description}
-            </p>
-            <div></div>
-            <p className="text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2"></p>
-
-            <div className="flex justify-center px-8">
-              {selectedMember.icons.map((icon, index) => (
-                <a
-                  key={index}
-                  href={icon.link}
-                  target="_blank" // This attribute opens the link in a new tab
-                  rel="noopener noreferrer" // Recommended for security and accessibility
-                  className="mr-4 text-white px-4 font-extrabold text-[1.6rem] hover:bg-primaryLightBlue rounded"
-                >
-                  {icon.socialName}
-                </a>
-              ))}
-            </div>
-
+          <div className="pop-up-box relative xs:w-[40rem] xs:h-[62.5rem] sm:w-[50rem] sm:h-[62.5rem] md:w-[55rem] md:h-[62.5rem] lg:w-[70rem] lg:h-[62.5rem] bg-primaryDarkBlue xs:py-2 xs:px-4 sm:py-8 sm:px-16 rounded-lg">
             <button
-              className="text-[1.4rem] mt-8 mx-auto px-4 py-2 bg-primaryLight text-black rounded hover:bg-secondaryPink block"
+              className="text-[1.4rem] absolute top-4 right-4 mx-auto px-4 py-2 text-primaryLight rounded hover:bg-secondaryPink block"
               onClick={closePopup}
             >
-              Close
+              X
             </button>
+            <div className="flex flex-col items-center justify-center h-full">
+              <img
+                src={selectedMember.img}
+                alt={selectedMember.name}
+                className="w-[20rem] h-[20rem] xs:w-[12.5rem] xs:h-[12.5rem] sm:w-[12.5rem] sm:h-[12.5rem] md:w-[15rem] md:h-[15rem] object-cover rounded-full mx-auto mb-4"
+              />
+              <h2 className="text-white xs:text-[1.6rem] sm:text-[2.2rem] font-bold text-center">
+                {selectedMember.name}
+              </h2>
+              <p className="text-white font-semibold xs:text-[1.4rem] lg:text-xl text-center py-2 sm:text-[1.4rem]">
+                {selectedMember.position}
+              </p>
+              <p className="text-white font-semibold text-center xs:text-[1.4rem] sm:text-[1.4rem]">
+                {selectedMember.major}
+              </p>
+              <p className="text-white font-semibold text-center sm:text-[1.4rem]">
+                {selectedMember.minor}
+              </p>
+              <p className="text-white px-24 py-4 text-center xs:text-[1.4rem] xs:px-2 sm:text-[1.6rem] lg:text-[1.8rem] lg:px-16 ">
+                {selectedMember.description}
+              </p>
+              <div></div>
+              <p className="text-white px-24 py-4 text-center font-semibold sm:text-lg xs:text-sm xs:px-2"></p>
+
+              <div className="flex justify-center px-8">
+                {selectedMember.icons.map((icon, index) => (
+                  <a
+                    key={index}
+                    href={icon.link}
+                    target="_blank" // This attribute opens the link in a new tab
+                    rel="noopener noreferrer" // Recommended for security and accessibility
+                    className="mr-4 text-white px-4 font-extrabold text-[1.6rem] hover:bg-primaryLightBlue rounded"
+                  >
+                    {icon.socialName}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       )}

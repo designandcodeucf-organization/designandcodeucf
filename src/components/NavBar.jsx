@@ -72,26 +72,32 @@ function NavBar() {
               >
                 About
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/projects"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
               >
                 Projects
-              </NavLink>
-              <NavLink
+              </NavLink> */}
+              {/* <NavLink
                 to="/events"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
               >
                 Events
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/contact"
                 className="block lg:mt-0 text-white text-[1.6rem] hover:text-primaryLightBlue mr-4"
+                // temporarily redirect to mailto:
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "mailto:designcodeatucf@gmail.com";
+                }}
               >
                 Contact
               </NavLink>
               <a
-                href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
+                // href="https://knightconnect.campuslabs.com/engage/organization/designandcode"
+                href="https://discord.gg/AvhnHqNP6h"
                 className="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white text-[1.6rem] border-white hover:border-transparent hover:text-white hover:bg-primaryLightBlue lg:mt-0"
               >
                 Become A Member
